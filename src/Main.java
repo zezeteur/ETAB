@@ -52,7 +52,7 @@ public class Main {
 
                 while (running) {
                     // Affichage du menu principal
-                    System.out.println("MENU:");
+                    System.out.println("MENU :");
                     System.out.println("1: Gestion des élèves");
                     System.out.println("2: Gestion des professeurs");
                     System.out.println("3: Gestion des utilisateurs");
