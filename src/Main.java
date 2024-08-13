@@ -15,13 +15,13 @@ import java.time.format.DateTimeFormatter;
 public class Main {
     public static void main(String[] args) throws SQLException {
         // Affichage de bienvenue
-        System.out.println("******************************************************");
-        System.out.println(        "BIENVENUE DANS L’APPLICATION ETAB v1.3");
-        System.out.println("******************************************************");
-        System.out.println("CONNEXION");
+        System.out.println("\n******************************************************\n");
+        System.out.println("       BIENVENUE DANS L’APPLICATION ETAB v1.3\n");
+        System.out.println("******************************************************\n");
+        System.out.println("                      CONNEXION\n");
 
         Utilisateur utilisateur = new Utilisateur();
-        utilisateur.ajouterUtilisateurDefaut(); // Ajouter l'utilisateur par défaut au démarrage
+        utilisateur.ajouterUtilisateurDefaut();
 
         // Initialisation des variables
         Scanner scanner = new Scanner(System.in);
@@ -40,14 +40,11 @@ public class Main {
             authenticated = utilisateurService.authentification(inputIdentifiant, inputMotDePasse);
 
             if (authenticated) {
-                System.out.println("******************************************************");
-                System.out.println("******************************************************");
-                System.out.println("        BIENVENU DANS L’APPLICATION ETAB v1.3");
-                System.out.println("******************************************************");
+                System.out.println("\n******************************************************\n");
+                System.out.println("        BIENVENU DANS L’APPLICATION ETAB v1.3\n");
+                System.out.println("******************************************************\n");
 
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-                System.out.println("Date et heure actuelles : " + startTime.format(formatter));
-                System.out.println("******************************************************");
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
 
                 boolean running = true;
                 ArrayList<Eleve> listeEleves = new ArrayList<>();
@@ -59,8 +56,9 @@ public class Main {
                     System.out.println("1: Gestion des élèves");
                     System.out.println("2: Gestion des professeurs");
                     System.out.println("3: Gestion des utilisateurs");
-                    System.out.println("0: Quitter");
-                    System.out.println("******************************************************");
+                    System.out.println("0: Quitter\n");
+
+                    System.out.println("Heure Systeme " + startTime.format(formatter));
 
                     System.out.print("Choisissez une option: ");
                     int choixMenu = scanner.nextInt();
@@ -71,9 +69,9 @@ public class Main {
                             boolean gestionEleves = true;
                             while (gestionEleves) {
                                 // Menu de gestion des élèves
-                                System.out.println("******************************************************");
-                                System.out.println("GESTION DES ELEVES");
-                                System.out.println("******************************************************");
+                                System.out.println("\n******************************************************\n");
+                                System.out.println("                  GESTION DES ELEVES\n");
+                                System.out.println("******************************************************\n");
                                 System.out.println("Menu :");
                                 System.out.println("1: Ajouter un élève");
                                 System.out.println("2: Supprimer un élève");
