@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="affb8a1d-dfcb-4318-8fb3-c35f132bb23a" name="Changes" comment="Mise a jour&#10;ETAB v1.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Utilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/IEleveDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/IEleveDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/Impl/EleveDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/Impl/EleveDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/impl/EleveServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/impl/EleveServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/impl/UtilisateurService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/impl/UtilisateurService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,8 +171,27 @@
       <option name="project" value="LOCAL" />
       <updated>1723628484621</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Mise a jour&#10;ETAB v1.3">
+      <option name="closed" value="true" />
+      <created>1723628881691</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723628881691</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bonjour !" />
