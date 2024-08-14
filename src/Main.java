@@ -50,7 +50,7 @@ public class Main {
                 ArrayList<Eleve> listeEleves = new ArrayList<>();
                 ArrayList<Professeur> listeProfesseurs = new ArrayList<>();
 
-                while (running) {
+                 while (running) {
                     // Affichage du menu principal
                     System.out.println("MENU :");
                     System.out.println("1: Gestion des élèves");
