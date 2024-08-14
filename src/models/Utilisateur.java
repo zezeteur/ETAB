@@ -36,6 +36,7 @@ public class Utilisateur {
     }
 
 
+
     public int getId() {
         return id;
     }
@@ -59,6 +60,7 @@ public class Utilisateur {
     public void setMotDePass(String motDePass) {
         this.motDePass = motDePass;
     }
+
 
     @Override
     public String toString() {
