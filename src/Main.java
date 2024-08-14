@@ -1,3 +1,4 @@
+import dao.Impl.EleveDaoImpl;
 import models.Eleve;
 import models.Professeur;
 import models.Utilisateur;
@@ -123,6 +124,7 @@ public class Main {
                                         listeEleves.add(eleve);
 
                                         System.out.println("Élève ajouté avec succès !");
+
                                         break;
                                     case 2:
                                         // Supprimer un élève

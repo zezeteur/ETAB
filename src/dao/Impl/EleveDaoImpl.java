@@ -15,52 +15,17 @@ public class EleveDaoImpl implements IEleveDao {
     public Eleve Ajouter(Eleve eleve) {
 
 
-        Connection conn;
-        PreparedStatement pstmt = null;
 
         try {
-            // Obtenir la connexion depuis le singleton
-            conn = SingletonDataBase.getInstance();
+            String query = "INSERT INTO eleve (classe, matricule) VALUES (?, ?)";
+            PreparedStatement statement = SingletonDataBase.getInstance().prepareStatement(query);
+            statement.setString(1, eleve.getClasse());
+            statement.setString(2, eleve.getMatricule());
 
-            // Créer la requête SQL
-            String sql = "INSERT INTO nom_de_table (colonne1, colonne2) VALUES (?, ?)";
-            pstmt = conn.prepareStatement(sql);
-
-            // Définir les valeurs des paramètres
-            pstmt.setString(1, eleve.getNom());
-            pstmt.setString(2, eleve.getPrenom());
-
-            // Exécuter la requête
-            int rowsAffected = pstmt.executeUpdate();
-            System.out.println("Nombre de lignes insérées : " + rowsAffected);
-
+            statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            // Fermer les ressources
-            try {
-                if (pstmt != null) pstmt.close();
-                // Pas besoin de fermer la connexion car elle est gérée par le singleton
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            System.out.println(e.getMessage());
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         return null;
     }
