@@ -52,13 +52,13 @@ public class Main {
 
                  while (running) {
                     // Affichage du menu principal
-                    System.out.println("MENU :");
+                    System.out.println("MENU :\n");
                     System.out.println("1: Gestion des élèves");
                     System.out.println("2: Gestion des professeurs");
                     System.out.println("3: Gestion des utilisateurs");
                     System.out.println("0: Quitter\n");
 
-                    System.out.println("Heure Systeme " + startTime.format(formatter));
+                    System.out.println("Heure Systeme " + startTime.format(formatter)+"\n");
 
                     System.out.print("Choisissez une option: ");
                     int choixMenu = scanner.nextInt();
@@ -72,7 +72,7 @@ public class Main {
                                 System.out.println("\n******************************************************\n");
                                 System.out.println("                  GESTION DES ELEVES\n");
                                 System.out.println("******************************************************\n");
-                                System.out.println("Menu :");
+                                System.out.println("Menu :\n");
                                 System.out.println("1: Ajouter un élève");
                                 System.out.println("2: Supprimer un élève");
                                 System.out.println("3: Modifier les informations de l'élève");

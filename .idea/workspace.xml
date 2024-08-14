@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="affb8a1d-dfcb-4318-8fb3-c35f132bb23a" name="Changes" comment="Mise a jour&#10;ETAB v1.3" />
+    <list default="true" id="affb8a1d-dfcb-4318-8fb3-c35f132bb23a" name="Changes" comment="Mise a jour&#10;ETAB v1.3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +136,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723623363518</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Mise a jour&#10;ETAB v1.3">
+      <option name="closed" value="true" />
+      <created>1723623871664</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1723623871664</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Mise a jour&#10;ETAB v1.3">
+      <option name="closed" value="true" />
+      <created>1723623936542</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723623936542</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
