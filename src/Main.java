@@ -119,6 +119,7 @@ public class Main {
                                             break;
                                         }
 
+
                                         Eleve eleve = new Eleve(id, dateNaissance, ville, nom, prenom, classe, matricule);
                                         //eleve.ajouter(eleve);
                                         listeEleves.add(eleve);
