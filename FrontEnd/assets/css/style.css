@@ -1213,6 +1213,7 @@ icon color: red;
 
 .cardeleve h4{
 color: #4154f1;
+margin-left: 20px;
 }
 
 .carddashboard {
@@ -1222,3 +1223,46 @@ color: #4154f1;
 }
 
 
+.containertable {
+    display: flex;
+}
+
+
+.containertable main {
+    flex: 1;
+    padding: 20px;
+     background-color: white;
+      margin-bottom: 30px;
+       border: none;
+       border-radius: 5px;
+       box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+ background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.containertable .boutonajout {
+    flex: 1;
+    padding: 10px;
+     background-color: #4154f1;
+      margin-bottom: 20px;
+       border: none;
+       border-radius: 5px;
+       box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+       text-color: white;
+        float: right;
+       }
+
+
+.containertable span {
+ color: white;
+       }
