@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="affb8a1d-dfcb-4318-8fb3-c35f132bb23a" name="Changes" comment="Mise a jour &#10;FrontEnd v1.1">
+    <list default="true" id="affb8a1d-dfcb-4318-8fb3-c35f132bb23a" name="Changes" comment="Mise a jour login page&#10;FrontEnd v1.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/FrontEnd/assets/css/style.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FrontEnd/index.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FrontEnd/login.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -303,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724012329217</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Mise a jour login page&#10;FrontEnd v1.1">
+      <option name="closed" value="true" />
+      <created>1724016770845</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1724016770845</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,6 +334,7 @@
     <MESSAGE value="Mise a jour FrontEnd&#10;ETAB v1.3" />
     <MESSAGE value="Mise a jour &#10;FrontEnd&#10;ETAB v1.3" />
     <MESSAGE value="Mise a jour &#10;FrontEnd v1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise a jour &#10;FrontEnd v1.1" />
+    <MESSAGE value="Mise a jour login page&#10;FrontEnd v1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise a jour login page&#10;FrontEnd v1.1" />
   </component>
 </project>
