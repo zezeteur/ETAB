@@ -1258,11 +1258,83 @@ th, td {
        border: none;
        border-radius: 5px;
        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-       text-color: white;
+
         float: right;
        }
 
 
-.containertable span {
+.containertable a {
  color: white;
        }
+
+
+.containertable .boutonaction1 {
+    flex: 1;
+    padding: 10px;
+     background-color: orange;
+      margin-bottom: 20px;
+       border: none;
+       border-radius: 5px;
+       box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+       text-color: white;
+
+       }
+
+
+.containertable .boutonaction2 {
+    flex: 1;
+    padding: 10px;
+     background-color: red;
+      margin-bottom: 20px;
+       border: none;
+       border-radius: 5px;
+       box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+       text-color: white;
+
+       }
+
+
+
+       form {
+           width: 400px;
+           margin: 0 auto;
+       }
+
+       label {
+           display: block;
+           margin-bottom: 5px;
+       }
+
+       input[type="text"],
+       input[type="tel"],  
+
+       select {
+           width: 100%;
+           padding: 10px;
+           margin-bottom: 15px;
+           border: 1px solid #ccc;
+           border-radius: 4px;
+       }
+
+       button {
+           padding: 10px 20px;
+           background-color:  
+        #4CAF50;
+           color: white;
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+       }
+
+       button[type="reset"] {
+           background-color: #f44336;  
+
+       }
+
+
+       button[type="submit"] {
+           background-color: green;  
+
+
+       }
+

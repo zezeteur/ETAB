@@ -82,7 +82,7 @@
 
 
         <li class="nav-item">
-            <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#" aria-expanded="false">
+            <a class="nav-link collapsed" href="rapport.html">
                 <i class="fas fa-file-alt"></i><span>Rapports</span>
             </a>
         </li>
@@ -134,7 +134,7 @@
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Élèves (2)</h1>
+        <h1>Ajouter un utilisateur</h1>
     </div>
 
 
@@ -142,82 +142,37 @@
 
         <main>
 
-            <button  class="boutonajout"><span><a href="ajouteleve.html"> + Nouvel élève</span></a>
-</button>
-
-            <table>
-                <thead>
-                <tr>
-                    <th>Nom</th>
-                    <th>Prénom</th>
-                    <th>Genre</th>
-                    <th>Classe</th>
-                    <th>Matricule</th>
-                    <th>Age</th>
-                    <th>Téléphone</th>
-                    <th>Ville</th>
-                    <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>KOFFI</td>
-                    <td>George</td>
-                    <td>M</td>
-                    <td>Tle</td>
-                    <td>GDJ7GDGD</td>
-                    <td>25</td>
-                    <td>0123456789</td>
-                    <td>Bonoua</td>
+            <button  class="boutonajout"><span> <a href="utilisateur.html" >< Retour</a></span>
+            </button>
 
 
-                    <td>
-                        <button class="boutonaction1">
-                            <span>
-                            Modifier</button>
-                        </span>
 
 
-                        <button class="boutonaction2" >
-                             <span>
-                            Supprimer
-                        </span>
-                        </button>
+            <form>
 
 
-                    </td>
-                </tr>
+                <label for="pseudo">Pseudo :</label>
+                <input type="text" id="pseudo" name="pseudo">
 
-                <tr>
-                    <td>KONE</td>
-                    <td>Sali</td>
-                    <td>F</td>
-                    <td>2nd</td>
-                    <td>GDJ7GDGD</td>
-                    <td>22</td>
-                    <td>0123456789</td>
-                    <td>Abidjan</td>
+                <label for="motdepasse">Mot de passe :</label>
+                <input type="text" id="motdepasse" name="motdepasse">
+
+                <label for="confirmmotdepasse">Confirmer mot de passe :</label>
+                <input type="text" id="confirmmotdepasse" name="confirmmotdepasse">
 
 
-                    <td>
-                        <button class="boutonaction1">
-                            <span>
-                            Modifier</button>
-                        </span>
+
+                <button class="annuler" type="reset">Annuler</button>
+                <button class="enregistrer" type="submit">Enregistrer</button>
+            </form>
 
 
-                        <button class="boutonaction2">
-                             <span>
-                            Supprimer
-                        </span>
-                        </button>
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
         </main>
     </div>
+
+
+
+
 
 </main><!-- End #main -->
 

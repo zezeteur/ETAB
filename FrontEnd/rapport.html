@@ -82,7 +82,7 @@
 
 
         <li class="nav-item">
-            <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#" aria-expanded="false">
+            <a class="nav-link collapsed" href="rapport.html">
                 <i class="fas fa-file-alt"></i><span>Rapports</span>
             </a>
         </li>
@@ -134,7 +134,7 @@
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Élèves (2)</h1>
+        <h1>Rapports</h1>
     </div>
 
 
@@ -142,82 +142,29 @@
 
         <main>
 
-            <button  class="boutonajout"><span><a href="ajouteleve.html"> + Nouvel élève</span></a>
-</button>
 
-            <table>
-                <thead>
-                <tr>
-                    <th>Nom</th>
-                    <th>Prénom</th>
-                    <th>Genre</th>
-                    <th>Classe</th>
-                    <th>Matricule</th>
-                    <th>Age</th>
-                    <th>Téléphone</th>
-                    <th>Ville</th>
-                    <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>KOFFI</td>
-                    <td>George</td>
-                    <td>M</td>
-                    <td>Tle</td>
-                    <td>GDJ7GDGD</td>
-                    <td>25</td>
-                    <td>0123456789</td>
-                    <td>Bonoua</td>
+            <div class="options">
+                <select id="rapport">
+                    <option value="eleves">Liste des élèves</option>
+                    <option value="professeurs">Liste des professeurs</option>
+                    <option value="utilisateurs">Liste des utilisateurs</option>
+                </select>
 
 
-                    <td>
-                        <button class="boutonaction1">
-                            <span>
-                            Modifier</button>
-                        </span>
+
+                <button class="annuler" type="reset">Générer format PDF</button>
+                <button class="enregistrer" type="submit">Générer format Excel</button>
+
+            </div>
 
 
-                        <button class="boutonaction2" >
-                             <span>
-                            Supprimer
-                        </span>
-                        </button>
 
-
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>KONE</td>
-                    <td>Sali</td>
-                    <td>F</td>
-                    <td>2nd</td>
-                    <td>GDJ7GDGD</td>
-                    <td>22</td>
-                    <td>0123456789</td>
-                    <td>Abidjan</td>
-
-
-                    <td>
-                        <button class="boutonaction1">
-                            <span>
-                            Modifier</button>
-                        </span>
-
-
-                        <button class="boutonaction2">
-                             <span>
-                            Supprimer
-                        </span>
-                        </button>
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
         </main>
     </div>
+
+
+
+
 
 </main><!-- End #main -->
 

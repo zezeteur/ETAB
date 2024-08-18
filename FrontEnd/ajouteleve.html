@@ -134,7 +134,7 @@
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Élèves (2)</h1>
+        <h1>Ajouter un élève</h1>
     </div>
 
 
@@ -142,82 +142,65 @@
 
         <main>
 
-            <button  class="boutonajout"><span><a href="ajouteleve.html"> + Nouvel élève</span></a>
-</button>
-
-            <table>
-                <thead>
-                <tr>
-                    <th>Nom</th>
-                    <th>Prénom</th>
-                    <th>Genre</th>
-                    <th>Classe</th>
-                    <th>Matricule</th>
-                    <th>Age</th>
-                    <th>Téléphone</th>
-                    <th>Ville</th>
-                    <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>KOFFI</td>
-                    <td>George</td>
-                    <td>M</td>
-                    <td>Tle</td>
-                    <td>GDJ7GDGD</td>
-                    <td>25</td>
-                    <td>0123456789</td>
-                    <td>Bonoua</td>
+            <button  class="boutonajout"><span> <a href="eleve.html" >< Retour</a></span>
+            </button>
 
 
-                    <td>
-                        <button class="boutonaction1">
-                            <span>
-                            Modifier</button>
-                        </span>
 
 
-                        <button class="boutonaction2" >
-                             <span>
-                            Supprimer
-                        </span>
-                        </button>
+            <form>
 
 
-                    </td>
-                </tr>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom">
 
-                <tr>
-                    <td>KONE</td>
-                    <td>Sali</td>
-                    <td>F</td>
-                    <td>2nd</td>
-                    <td>GDJ7GDGD</td>
-                    <td>22</td>
-                    <td>0123456789</td>
-                    <td>Abidjan</td>
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom">
 
+                <label>Sexe:</label>  
 
-                    <td>
-                        <button class="boutonaction1">
-                            <span>
-                            Modifier</button>
-                        </span>
+                <input type="radio" id="homme" name="sexe" value="homme">
+                <label for="homme">Homme</label>
+                <input type="radio" id="femme" name="sexe" value="femme">
+                <label for="femme">Femme</label>  
 
 
-                        <button class="boutonaction2">
-                             <span>
-                            Supprimer
-                        </span>
-                        </button>
-                    </td>
-                </tr>
+                <label for="classe">Classe :</label>
+                <select id="classe" name="classe">
+                    <option value="Tle">Tle</option>
+                    <option value="1ere">1ère</option>
+                    <option value="2nd">2nde</option>
+                    <option value="3eme">3ème</option>
+                    <option value="4eme">4ème</option>
+                    <option value="5eme">5ème</option>
+                    <option value="6eme">6ème</option>
+                </select>  
 
-                </tbody>
-            </table>
+
+                <label for="matricule">Matricule:</label>
+                <input type="text" id="matricule" name="matricule">
+
+                <label for="date">Date de naissance:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="telephone">Téléphone:</label>
+                <input type="tel" id="telephone" name="telephone">
+
+                <label for="ville">Ville:</label>
+                <input type="text" id="ville" name="ville">
+
+
+                <button class="annuler" type="reset">Annuler</button>
+                <button class="enregistrer" type="submit">Enregistrer</button>
+            </form>
+
+
         </main>
     </div>
+
+
+
+
 
 </main><!-- End #main -->
 
