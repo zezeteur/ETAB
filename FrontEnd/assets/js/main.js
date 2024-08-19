@@ -1,4 +1,5 @@
 
+
 (function() {
   "use strict";
 
@@ -41,14 +42,6 @@
     })
   }
 
-  /**
-   * Search bar toggle
-   */
-  if (select('.search-bar-toggle')) {
-    on('click', '.search-bar-toggle', function(e) {
-      select('.search-bar').classList.toggle('search-bar-show')
-    })
-  }
 
   /**
    * Navbar links active state on scroll
@@ -176,6 +169,7 @@
   /**
    * Initiate TinyMCE Editor
    */
+
   const useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const isSmallScreen = window.matchMedia('(max-width: 1023.5px)').matches;
 
@@ -312,4 +306,19 @@
     }, 200);
   }
 
+
+
 })();
+
+
+  // Script for Modal
+
+  function openModalDelete() {
+    var closeModal = document.getElementById("closeModal");
+    closeModal.style.display = "flex";
+  }
+
+  function btnClose() {
+    var closeModal = document.getElementById("closeModal");
+    closeModal.style.display = "none";
+  }

@@ -157,7 +157,7 @@
                         </button>
 
 
-                        <button class="boutonaction2" >
+                        <button onclick="openModalDelete()" class="boutonaction2" >
                              <span>
                             Supprimer
                         </span>
@@ -181,7 +181,7 @@
                             Modifier
                         </span>
                         </button>
-                        <button class="boutonaction2">
+                        <button onclick="openModalDelete()" class="boutonaction2">
                              <span>
                             Supprimer
                         </span>
@@ -190,6 +190,24 @@
                 </tr>
                 </tbody>
             </table>
+
+            <!-- Modal -->
+            <div id="closeModal" class="modal">
+
+                <div class="imodal">a</div>
+                <div class="modal-1">
+                    ATTENTION !!! <br />
+                    <label class="text">
+                        Voulez-vous Supprimer cet élève ?
+                    </label>
+                    <div class="btn">
+                        <button type="submit3" onclick="btnClose()" id="btnclose" class="btnNo">Non</button>
+                        <button type="cancel2" id="btnOpen" class="btnYes">Oui</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
+
         </main>
     </div>
 
