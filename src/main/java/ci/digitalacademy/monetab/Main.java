@@ -1,9 +1,11 @@
-import java.repositories.Impl.EleveDaoImpl;
-import models.Eleve;
-import models.Professeur;
-import models.Utilisateur;
-import services.IUtilisateurService;
-import services.impl.UtilisateurService;
+package ci.digitalacademy.monetab;
+
+import ci.digitalacademy.monetab.repositories.Impl.EleveDaoImpl;
+import ci.digitalacademy.monetab.models.Eleve;
+import ci.digitalacademy.monetab.models.Professeur;
+import ci.digitalacademy.monetab.models.Utilisateur;
+import ci.digitalacademy.monetab.services.IUtilisateurService;
+import ci.digitalacademy.monetab.services.Impl.UtilisateurService;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -37,7 +39,7 @@ public class Main {
             System.out.print("Entrez votre mot de passe: ");
             String inputMotDePasse = scanner.nextLine();
 
-            IUtilisateurService utilisateurService = new UtilisateurService();
+            IUtilisateurService utilisateurService = (IUtilisateurService) new UtilisateurService();
             authenticated = utilisateurService.authentification(inputIdentifiant, inputMotDePasse);
 
             if (authenticated) {

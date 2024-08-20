@@ -1,8 +1,8 @@
 package ci.digitalacademy.monetab.repositories.Impl;
 
-import dao.IUtilisateurDao;
-import dao.SingletonDataBase;
-import models.Utilisateur;
+import ci.digitalacademy.monetab.repositories.IUtilisateurDao;
+import ci.digitalacademy.monetab.repositories.SingletonDataBase;
+import ci.digitalacademy.monetab.models.Utilisateur;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;

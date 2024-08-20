@@ -1,6 +1,6 @@
 package ci.digitalacademy.monetab.repositories;
 
-import models.Eleve;
+import ci.digitalacademy.monetab.models.Eleve;
 import java.util.List;
 
 public interface IEleveDao {

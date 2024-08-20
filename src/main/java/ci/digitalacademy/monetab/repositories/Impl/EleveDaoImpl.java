@@ -1,8 +1,8 @@
 package ci.digitalacademy.monetab.repositories.Impl;
 
-import dao.IEleveDao;
-import dao.SingletonDataBase;
-import models.Eleve;
+import ci.digitalacademy.monetab.repositories.IEleveDao;
+import ci.digitalacademy.monetab.repositories.SingletonDataBase;
+import ci.digitalacademy.monetab.models.Eleve;
 import java.util.List;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

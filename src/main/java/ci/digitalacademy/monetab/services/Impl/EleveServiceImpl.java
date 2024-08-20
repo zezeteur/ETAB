@@ -1,9 +1,9 @@
 package ci.digitalacademy.monetab.services.Impl;
 
-import dao.IEleveDao;
-import models.Eleve;
-import models.Utilisateur;
-import services.IEleveService;
+import ci.digitalacademy.monetab.repositories.IEleveDao;
+import ci.digitalacademy.monetab.models.Eleve;
+import ci.digitalacademy.monetab.models.Utilisateur;
+import ci.digitalacademy.monetab.services.IEleveService;
 
 public class EleveServiceImpl implements IEleveService {
 

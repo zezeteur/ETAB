@@ -1,6 +1,6 @@
 package ci.digitalacademy.monetab.services;
 
-import models.Eleve;
+import ci.digitalacademy.monetab.models.Eleve;
 
 public interface  IEleveService {
 

@@ -1,6 +1,6 @@
 package ci.digitalacademy.monetab.repositories;
 
-import models.Professeur;
+import ci.digitalacademy.monetab.models.Professeur;
 import java.util.List;
 
 public interface IProfesseurDao {

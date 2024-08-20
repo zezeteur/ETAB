@@ -1,12 +1,16 @@
 package ci.digitalacademy.monetab.repositories.Impl;
 
-import dao.IProfesseurDao;
-import models.Professeur;
+import ci.digitalacademy.monetab.models.Professeur;
+import ci.digitalacademy.monetab.repositories.IProfesseurDao;
+import ci.digitalacademy.monetab.models.Eleve;
 import java.util.List;
 
 public class ProfesseurDaoImpl implements IProfesseurDao {
+    private Professeur professeur;
+
     @Override
     public Professeur Ajouter(Professeur professeur) {
+        this.professeur = professeur;
         return null;
     }
 

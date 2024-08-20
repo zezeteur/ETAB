@@ -1,7 +1,7 @@
 package ci.digitalacademy.monetab.services.Impl;
 
-import models.Professeur;
-import services.IProfesseurService;
+import ci.digitalacademy.monetab.models.Professeur;
+import ci.digitalacademy.monetab.services.IProfesseurService;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
 package ci.digitalacademy.monetab.services.Impl;
 
-import dao.IUtilisateurDao;
-import dao.Impl.UtilisateurDaoImpl;
-import models.Utilisateur;
-import services.IUtilisateurService;
+import ci.digitalacademy.monetab.repositories.IUtilisateurDao;
+import ci.digitalacademy.monetab.repositories.Impl.UtilisateurDaoImpl;
+import ci.digitalacademy.monetab.models.Utilisateur;
+import ci.digitalacademy.monetab.services.IUtilisateurService;
 
 import java.sql.SQLException;
 import java.util.List;

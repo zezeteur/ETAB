@@ -1,6 +1,6 @@
 package ci.digitalacademy.monetab.services;
 
-import models.Utilisateur;
+import ci.digitalacademy.monetab.models.Utilisateur;
 import java.sql.SQLException;
 import java.util.List;
 
