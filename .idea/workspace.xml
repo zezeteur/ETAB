@@ -5,46 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;- Amelioration de l'architecture&#10;-Correction de bugs&#10;Mon Etab v1.0.4">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/ReportsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/StudentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/StudentsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/TeachersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/TeachersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ajouteleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ajouteleve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ajoutprofesseur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ajoutprofesseur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ajoututilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ajoututilisateur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/eleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/eleve.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/verif.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/IEducation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/StudentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/StudentsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/TeachersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/TeachersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/UsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/Eleve.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/Personne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/Professeur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/Utilisateur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/repositories/IEleveDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/repositories/IProfesseurDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/repositories/IUtilisateurDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/repositories/Impl/EleveDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/repositories/Impl/ProfesseurDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/repositories/Impl/UtilisateurDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/repositories/SingletonDataBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/IEleveService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/IProfesseurService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/IUtilisateurService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/Impl/EleveServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/Impl/ProfesseurServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/Impl/UtilisateurService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages-error-404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages-error-404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/professeur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/professeur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/rapport.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/rapport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/utilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/utilisateur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/ajouteleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ajouteleve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/ajoutprofesseur.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ajoutprofesseur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/ajoututilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ajoututilisateur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/eleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/eleve.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/verif.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/professeur.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/professeur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/rapport.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/rapport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/utilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/utilisateur.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,20 +74,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MonetabApplication.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/herve/OneDrive/Bureau/ATOS ADA/java/GIT/ETAB_V1.3&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.MonetabApplication.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/herve/OneDrive/Bureau/ATOS ADA/java/GIT/ETAB_V1.3",
+    "settings.editor.selected.configurable": "preferences.externalResources"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\herve\OneDrive\Bureau\ATOS ADA\java\GIT\ETAB_V1.3\monetab\src\main\resources\static" />
@@ -116,12 +98,30 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="MonetabApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ci.digitalacademy.monetab.MonetabApplication" />
+      <module name="monetab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ci.digitalacademy.monetab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MonEtabV1.2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MonetabApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -204,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724250040328</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;- Amelioration de l'architecture&#10;-Correction de bugs&#10;Mon Etab v1.0.4">
+      <option name="closed" value="true" />
+      <created>1724255750450</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724255750450</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -213,5 +221,15 @@
     <MESSAGE value="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;-Correction de bugs&#10;Mon Etab v1.0.4" />
     <MESSAGE value="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;- Amelioration de l'architecture&#10;-Correction de bugs&#10;Mon Etab v1.0.4" />
     <option name="LAST_COMMIT_MESSAGE" value="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;- Amelioration de l'architecture&#10;-Correction de bugs&#10;Mon Etab v1.0.4" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.thymeleaf.exceptions.TemplateInputException" package="org.thymeleaf.exceptions" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
