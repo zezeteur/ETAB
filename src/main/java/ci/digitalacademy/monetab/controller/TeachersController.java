@@ -6,12 +6,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("teachers")
-
 public class TeachersController {
 
     @GetMapping
     public String teachers(){
         return "professeur";
+    }
+
+    @GetMapping("/add")
+    public String add(){
+        return "ajoutprofesseur";
     }
 
 }

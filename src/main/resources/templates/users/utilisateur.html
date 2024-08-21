@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Professeurs - Mon Etab</title>
+    <title>Utilisateurs - Mon Etab</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -22,7 +22,6 @@
     <link th:href="@{vendor/quill/quill.bubble.css}" rel="stylesheet">
     <link th:href="@{vendor/remixicon/remixicon.css}" rel="stylesheet">
     <link th:href="@{vendor/simple-datatables/style.css}" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -33,7 +32,7 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a th:href="@{home}" class="logo d-flex align-items-center">
             <img th:src="@{img/logo.png}" alt="Logo Mon Etab">
             <span class="d-none d-lg-block">  Mon Etab</span>
         </a>
@@ -41,6 +40,7 @@
     </div>
 
 </header>
+
 
 <aside id="sidebar" class="sidebar">
 
@@ -53,27 +53,27 @@
             </a>
         </li>
 
-        <li class="nav-item"  >
-            <a class="nav-link collapsed" th:href="@{students}">
+        <li class="nav-item">
+            <a  class="nav-link collapsed" th:href="@{students}">
                 <i class="fas fa-user-graduate "></i>
                 <span>Elèves</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link "  >
+            <a class="nav-link collapsed" th:href="@{teachers}">
                 <i class="fas fa-chalkboard-teacher"></i><span>Professeurs</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" th:href="@{users}">
+            <a class="nav-link ">
                 <i class="fas fa-users"></i><span>Utilisateurs</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" th:href="@{reports}">
+            <a class="nav-link collapsed" th:href="reports">
                 <i class="fas fa-file-alt"></i><span>Rapports</span>
             </a>
         </li>
@@ -116,51 +116,51 @@
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Ajouter un professeur</h1>
+        <h1>Utilisateurs (2)</h1>
     </div>
 
     <div class="containertable">
 
         <main>
-            <button  class="boutonajout"><span> <a th:href="@{teachers}" >< Retour</a></span>
+            <button  class="boutonajout"><span><a th:href="@{users/add}"> + Nouveau utilisateur</a></span>
             </button>
 
-            <form>
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom">
+            <table>
+                <thead>
+                <tr>
+                    <th>Pseudo</th>
+                    <th>Date de création</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>admin</td>
+                    <td>16/08/2024</td>
 
-                <label for="prenom">Prénom:</label>
-                <input type="text" id="prenom" name="prenom">
+                    <td>
+                        <button class="boutonaction1">
+                            <span>
+                            Modifier
+                        </span>
+                        </button>
+                    </td>
+                </tr>
 
-                <label>Sexe:</label>  
-                <input type="radio" id="homme" name="sexe" value="homme">
-                <label for="homme">Homme</label>
-                <input type="radio" id="femme" name="sexe" value="femme">
-                <label for="femme">Femme</label>  
+                <tr>
+                    <td>user2</td>
+                    <td>13/08/2024</td>
 
-                <label for="matiere">Matière :</label>
-                <select id="matiere" name="matiere">
-                    <option value="Math">Math</option>
-                    <option value="Physique">Physique</option>
-                    <option value="EPS">EPS</option>
-                    <option value="Anglais">Anglais</option>
-                    <option value="SVT">SVT</option>
-                    <option value="Philosophie">Philosophie</option>
-                    <option value="Francais">Francais</option>
-                </select>  
-
-                <label for="date">Date de naissance:</label>
-                <input type="date" id="date" name="date">
-
-                <label for="telephone">Téléphone:</label>
-                <input type="tel" id="telephone" name="telephone">
-
-                <label for="ville">Ville:</label>
-                <input type="text" id="ville" name="ville">
-
-                <button class="annuler" type="reset">Annuler</button>
-                <button class="enregistrer" type="submit">Enregistrer</button>
-            </form>
+                    <td>
+                        <button class="boutonaction1">
+                            <span>
+                            Modifier
+                        </span>
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </main>
     </div>
 </main>
@@ -172,7 +172,7 @@
 <script th:src="@{vendor/tinymce/tinymce.min.js}"></script>
 <script th:src="@{main.js}"></script>
 
-    </body>
+</body>
 </html>
 
 

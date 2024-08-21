@@ -7,12 +7,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("users")
-
 public class UsersController {
 
     @GetMapping
     public String users(){
         return "utilisateur";
+    }
+
+    @GetMapping("/add")
+    public String add(){
+        return "ajoututilisateur";
     }
 
 }

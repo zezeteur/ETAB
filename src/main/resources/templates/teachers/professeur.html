@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Elèves - Mon Etab</title>
+    <title>Professeurs - Mon Etab</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -22,7 +22,6 @@
     <link th:href="@{vendor/quill/quill.bubble.css}" rel="stylesheet">
     <link th:href="@{vendor/remixicon/remixicon.css}" rel="stylesheet">
     <link th:href="@{vendor/simple-datatables/style.css}" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -35,7 +34,7 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a th:href="@{home}" class="logo d-flex align-items-center">
             <img th:src="@{img/logo.png}" alt="Logo Mon Etab">
             <span class="d-none d-lg-block">  Mon Etab</span>
         </a>
@@ -51,23 +50,21 @@
         <li class="nav-item">
             <a class="nav-link collapsed" th:href="@{home}">
                 <span class="material-icons">dashboard</span>
-                <span>Tableau de bord </span>
+                </i><span>Tableau de bord </span>
             </a>
-
         </li>
 
-        <li class="nav-item">
-            <a class="nav-link " >
+        <li class="nav-item"  >
+            <a class="nav-link collapsed" th:href="@{students}">
                 <i class="fas fa-user-graduate "></i>
                 <span>Elèves</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" th:href="@{teachers}">
+            <a class="nav-link "  >
                 <i class="fas fa-chalkboard-teacher"></i><span>Professeurs</span>
             </a>
-
         </li>
 
         <li class="nav-item">
@@ -120,53 +117,98 @@
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Ajouter un élève</h1>
+        <h1>Professeurs (2)</h1>
     </div>
 
     <div class="containertable">
+
         <main>
-            <button  class="boutonajout"><span> <a th:href="@{students}" >< Retour</a></span>
+            <button  class="boutonajout"><span><a th:href="@{/teachers/add}"> + Nouveau professeur</a></span>
             </button>
 
-            <form>
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Matière</th>
+                    <th>Vacant</th>
+                    <th>Age</th>
+                    <th>Téléphone</th>
+                    <th>Ville</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>KOUAKOU</td>
+                    <td>Gregoire</td>
+                    <td>Math</td>
+                    <td>Non</td>
+                    <td>40</td>
+                    <td>0123456789</td>
+                    <td>Touba</td>
 
-                <label for="prenom">Prénom:</label>
-                <input type="text" id="prenom" name="prenom">
+                    <td>
+                        <button class="boutonaction1">
+                            <span>
+                            Modifier
+                        </span>
+                        </button>
 
-                <label>Sexe:</label>  
-                <input type="radio" id="homme" name="sexe" value="homme">
-                <label for="homme">Homme</label>
-                <input type="radio" id="femme" name="sexe" value="femme">
-                <label for="femme">Femme</label>  
+                        <button onclick="openModalDelete()" class="boutonaction2" >
+                             <span>
+                            Supprimer
+                        </span>
+                        </button>
+                    </td>
+                </tr>
 
-                <label for="classe">Classe :</label>
-                <select id="classe" name="classe">
-                    <option value="Tle">Tle</option>
-                    <option value="1ere">1ère</option>
-                    <option value="2nd">2nde</option>
-                    <option value="3eme">3ème</option>
-                    <option value="4eme">4ème</option>
-                    <option value="5eme">5ème</option>
-                    <option value="6eme">6ème</option>
-                </select>  
+                <tr>
+                    <td>ATTA</td>
+                    <td>Flora</td>
+                    <td>Physique</td>
+                    <td>Oui</td>
+                    <td>37</td>
+                    <td>0123456789</td>
+                    <td>Bouaké</td>
 
-                <label for="matricule">Matricule:</label>
-                <input type="text" id="matricule" name="matricule">
+                    <td>
+                        <button class="boutonaction1">
+                            <span>
+                            Modifier
+                        </span>
+                        </button>
 
-                <label for="date">Date de naissance:</label>
-                <input type="date" id="date" name="date">
+                        <button onclick="openModalDelete()" class="boutonaction2">
+                             <span>
+                            Supprimer
+                        </span>
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
 
-                <label for="telephone">Téléphone:</label>
-                <input type="tel" id="telephone" name="telephone">
+            <!-- Modal -->
+            <div id="closeModal" class="modal">
 
-                <label for="ville">Ville:</label>
-                <input type="text" id="ville" name="ville">
+                <div class="imodal">a</div>
+                <div class="modal-1">
+                    ATTENTION !!! <br />
+                    <label class="text">
+                        Voulez-vous Supprimer ce professeur ?
+                    </label>
+                    <div class="btn">
+                        <button onclick="btnClose()" id="btnclose" class="btnNo">Non</button>
+                        <button id="btnOpen" class="btnYes">Oui</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
 
-                <button class="annuler" type="reset">Annuler</button>
-                <button class="enregistrer" type="submit">Enregistrer</button>
-            </form>
+
+
         </main>
     </div>
 </main>
