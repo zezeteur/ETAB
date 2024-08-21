@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
 <head>
   <meta charset="utf-8">
@@ -32,7 +32,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a th:href="@{index}" class="logo d-flex align-items-center">
+      <a th:href="@{/}" class="logo d-flex align-items-center">
         <img th:src="@{img/logo.png}" alt="Logo Mon Etab">
         <span class="d-none d-lg-block">  Mon Etab</span>
       </a>
@@ -54,25 +54,25 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="eleve.html">
+        <a class="nav-link collapsed" th:href="@{students}">
           <i class="fas fa-user-graduate"></i><span> Elèves</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="professeur.html">
+        <a class="nav-link collapsed" th:href="@{teachers}">
           <i class="fas fa-chalkboard-teacher"></i><span>Professeurs</span>
         </a>
       </li>
 
         <li class="nav-item">
-        <a class="nav-link collapsed" href="utilisateur.html">
+        <a class="nav-link collapsed" th:href="@{users}">
           <i class="fas fa-users"></i><span>Utilisateurs</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="rapport.html">
+        <a class="nav-link collapsed" th:href="@{reports}">
           <i class="fas fa-file-alt"></i><span>Rapports</span>
         </a>
       </li>
@@ -103,7 +103,7 @@
 
  <li class="nav-item">
      <div class="logout">
-        <a class="nav-link " href="login.html">
+        <a class="nav-link " th:href="@{login}">
           <span class="material-icons">logout</span>
           <span>Déconnexion</span>
         </a>
@@ -230,15 +230,15 @@
   </main>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <script src="../../../../../static/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="../../../../../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../../../../static/vendor/chart.js/chart.umd.js"></script>
-  <script src="../../../../../static/vendor/echarts/echarts.min.js"></script>
-  <script src="../../../../../static/vendor/quill/quill.min.js"></script>
-  <script src="../../../../../static/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="../../../../../static/vendor/tinymce/tinymce.min.js"></script>
-  <script src="../../../../../static/vendor/php-email-form/validate.js"></script>
-  <script src="../../../../../static/main.js"></script>
+  <script th:src="@{vendor/apexcharts/apexcharts.min.js}"></script>
+  <script th:src="@{vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+  <script th:src="@{vendor/chart.js/chart.umd.js}"></script>
+  <script th:src="@{vendor/echarts/echarts.min.js}"></script>
+  <script th:src="@{vendor/quill/quill.min.js}"></script>
+  <script th:src="@{vendor/simple-datatables/simple-datatables.js}"></script>
+  <script th:src="@{vendor/tinymce/tinymce.min.js}"></script>
+  <script th:src="@{vendor/php-email-form/validate.js}"></script>
+  <script th:src="@{main.js}"></script>
 
 </body>
 </html>
