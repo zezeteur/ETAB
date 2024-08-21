@@ -11,22 +11,22 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <link href="../../../../../static/img/logo.png" rel="icon">
+    <link th:href="@{img/logo.png}" rel="icon">
 
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <link href="../../../../../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../../../../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../../../../../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="../../../../../static/vendor/quill/quill.snow.css" rel="stylesheet">
-    <link href="../../../../../static/vendor/quill/quill.bubble.css" rel="stylesheet">
-    <link href="../../../../../static/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="../../../../../static/vendor/simple-datatables/style.css" rel="stylesheet">
+    <link th:href="@{vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{vendor/bootstrap-icons/bootstrap-icons.css}" rel="stylesheet">
+    <link th:href="@{vendor/boxicons/css/boxicons.min.css}" rel="stylesheet">
+    <link th:href="@{vendor/quill/quill.snow.css}" rel="stylesheet">
+    <link th:href="@{vendor/quill/quill.bubble.css}" rel="stylesheet">
+    <link th:href="@{vendor/remixicon/remixicon.css}" rel="stylesheet">
+    <link th:href="@{vendor/simple-datatables/style.css}" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link href="../../../../../static/style.css" rel="stylesheet">
-</head>
+    <link th:href="@{style.css}" rel="stylesheet"></head>
 
 <body>
 
@@ -34,7 +34,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
-            <img src="../../../../../static/img/logo.png" alt="Logo Mon Etab">
+            <img th:src="@{img/logo.png}" alt="Logo Mon Etab">
             <span class="d-none d-lg-block">  Mon Etab</span>
         </a>
         <i class="toggle-sidebar-btn"><span class="material-icons">menu</span></i>
@@ -47,14 +47,14 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="index.html">
+            <a class="nav-link collapsed" th:href="@{home}">
                 <span class="material-icons">dashboard</span>
                 </i><span>Tableau de bord </span>
             </a>
         </li>
 
         <li class="nav-item"  >
-            <a class="nav-link collapsed" href="eleve.html">
+            <a class="nav-link collapsed" th:href="@{students}">
                 <i class="fas fa-user-graduate "></i>
                 <span>Elèves</span>
             </a>
@@ -67,13 +67,13 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="utilisateur.html">
+            <a class="nav-link collapsed" th:href="@{users}">
                 <i class="fas fa-users"></i><span>Utilisateurs</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="rapport.html">
+            <a class="nav-link collapsed" th:href="@{reports}">
                 <i class="fas fa-file-alt"></i><span>Rapports</span>
             </a>
         </li>
@@ -104,7 +104,7 @@
 
         <li class="nav-item">
             <div class="logout">
-                <a class="nav-link " href="login.html">
+                <a class="nav-link " th:href="@{login}">
                     <span class="material-icons">logout</span>
                     <span>Déconnexion</span>
                 </a>
@@ -122,7 +122,7 @@
     <div class="containertable">
 
         <main>
-            <button  class="boutonajout"><span> <a href="professeur.html" >< Retour</a></span>
+            <button  class="boutonajout"><span> <a th:href="@{teachers}" >< Retour</a></span>
             </button>
 
             <form>
@@ -167,13 +167,12 @@
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+<script th:src="@{vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{vendor/quill/quill.min.js}"></script>
+<script th:src="@{vendor/tinymce/tinymce.min.js}"></script>
+<script th:src="@{main.js}"></script>
 
-<script src="../../../../../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../../../../static/vendor/quill/quill.min.js"></script>
-<script src="../../../../../static/vendor/tinymce/tinymce.min.js"></script>
-<script src="../../../../../static/main.js"></script>
-
-</body>
+    </body>
 </html>
 
 

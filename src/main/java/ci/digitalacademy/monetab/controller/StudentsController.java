@@ -5,15 +5,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("students")
-
+@RequestMapping("/students")
 public class StudentsController {
 
-@GetMapping
+    @GetMapping
     public String students(){
         return "eleve";
     }
 
+    @GetMapping("/add")
     public String add(){
     return "ajouteleve";
     }
