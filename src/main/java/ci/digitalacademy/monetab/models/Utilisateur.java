@@ -1,7 +1,5 @@
 package ci.digitalacademy.monetab.models;
 
-import ci.digitalacademy.monetab.repositories.SingletonDataBase;
-
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
