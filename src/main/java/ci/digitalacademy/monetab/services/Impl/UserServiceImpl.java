@@ -22,7 +22,14 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User update(User user) {
-        return null;
+        return userRepository.findById(user.getId())
+                .map(existingUser->{
+                    existingUser.setPassword(user.getPassword());
+                    existingUser.setPseudo(user.getPseudo());
+                    return existingUser;
+                }).map((existingUser-> {
+                    return save(existingUser);
+                }).orElseThrow(() -> new IllegalArgumentException());
     }
 
     @Override
