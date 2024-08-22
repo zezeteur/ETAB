@@ -19,4 +19,10 @@ public class StudentsController {
     }
 
 
+    @GetMapping("/edit")
+    public String edit(){
+        return "students/modifeleve";
+    }
+
+
 }

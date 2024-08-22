@@ -19,4 +19,9 @@ public class UsersController {
         return "users/ajoututilisateur";
     }
 
+    @GetMapping("/edit")
+    public String edit(){
+        return "users/modifutilisateur";
+    }
+
 }

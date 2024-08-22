@@ -1,4 +1,5 @@
-<head th:fragment="head">
+<head th:fragment="head"  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -25,12 +26,10 @@
 
 </head>
 
-<th:block th:fragment="js">
+<th:block th:fragment="js"  xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:th="http://www.thymeleaf.org">
   <script th:src="@{vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
   <script th:src="@{vendor/quill/quill.min.js}"></script>
   <script th:src="@{vendor/tinymce/tinymce.min.js}"></script>
   <script th:src="@{main.js}"></script>
 </th:block>
-
-
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

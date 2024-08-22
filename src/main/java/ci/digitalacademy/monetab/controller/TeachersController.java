@@ -18,4 +18,9 @@ public class TeachersController {
         return "teachers/ajoutprofesseur";
     }
 
+    @GetMapping("/edit")
+    public String edit(){
+        return "teachers/modifprofesseur";
+    }
+
 }
