@@ -4,38 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.5&#10;-Interface utilisateur(Pop-Up avertissement suppression enregistrement)&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/fragmentajout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/students/modifeleve.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers/modifprofesseur.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/users/modifutilisateur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.5">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/StudentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/StudentsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/TeachersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/TeachersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students/ajouteleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/ajouteleve.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students/eleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/eleve.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/teachers/ajoutprofesseur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers/ajoutprofesseur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/teachers/professeur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers/professeur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/ajoututilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/ajoututilisateur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/utilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/utilisateur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/StudentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/StudentsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/TeachersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/TeachersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/UsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/students/ajouteleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/students/ajouteleve.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/students/eleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/students/eleve.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/teachers/ajoutprofesseur.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/teachers/ajoutprofesseur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/teachers/professeur.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/teachers/professeur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/ajoututilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/users/ajoututilisateur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/utilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/users/utilisateur.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +38,9 @@
     &quot;accountId&quot;: &quot;8ff88242-1acb-4a14-940f-c2125c4c3b19&quot;
   }
 }</component>
+  <component name="JvmLoggingSettingsStorage">
+    <option name="loggerId" value="Lombok Slf4j" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -279,7 +254,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724316299366</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.5">
+      <option name="closed" value="true" />
+      <created>1724322197999</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1724322197999</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.5">
+      <option name="closed" value="true" />
+      <created>1724322234524</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1724322234524</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -290,7 +281,8 @@
     <MESSAGE value="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;-Amelioration de l'architecture&#10;-Correction de bugs&#10;Mon Etab v1.0.4" />
     <MESSAGE value="Mise a jour v1.0.4&#10;-Interface utilisateur(Pop-Up avertissement suppression enregistrement)&#10;-Amelioration de l'architecture&#10;-Correction de bugs&#10;Mon Etab v1.0.4" />
     <MESSAGE value="Mise a jour v1.0.5&#10;-Interface utilisateur(Pop-Up avertissement suppression enregistrement)&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise a jour v1.0.5&#10;-Interface utilisateur(Pop-Up avertissement suppression enregistrement)&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.4" />
+    <MESSAGE value="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
