@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;-Creation de logs&#10;Mon Etab v1.0.5" />
+    <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;-Creation de logs&#10;Mon Etab v1.0.5">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonEtab.log" beforeDir="false" afterPath="$PROJECT_DIR$/MonEtab.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -322,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724339685361</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;-Creation de logs&#10;Mon Etab v1.0.5">
+      <option name="closed" value="true" />
+      <created>1724339899724</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1724339899724</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
