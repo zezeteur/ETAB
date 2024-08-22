@@ -11,7 +11,7 @@ public class ReportsController {
 
     @GetMapping
     public String reports(){
-        return "rapport";
+        return "reports/rapport";
     }
 
 }

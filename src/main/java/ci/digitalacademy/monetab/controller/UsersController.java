@@ -11,12 +11,12 @@ public class UsersController {
 
     @GetMapping
     public String users(){
-        return "utilisateur";
+        return "users/utilisateur";
     }
 
     @GetMapping("/add")
     public String add(){
-        return "ajoututilisateur";
+        return "users/ajoututilisateur";
     }
 
 }

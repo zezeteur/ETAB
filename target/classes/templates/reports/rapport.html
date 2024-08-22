@@ -3,32 +3,8 @@
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<head th:insert="~{fragments/fragment :: head}"></head>
 
-    <title>Rapports - Mon Etab</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <link th:href="@{img/logo.png}" rel="icon">
-
-
-    <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <link th:href="@{vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
-    <link th:href="@{vendor/bootstrap-icons/bootstrap-icons.css}" rel="stylesheet">
-    <link th:href="@{vendor/boxicons/css/boxicons.min.css}" rel="stylesheet">
-    <link th:href="@{vendor/quill/quill.snow.css}" rel="stylesheet">
-    <link th:href="@{vendor/quill/quill.bubble.css}" rel="stylesheet">
-    <link th:href="@{vendor/remixicon/remixicon.css}" rel="stylesheet">
-    <link th:href="@{vendor/simple-datatables/style.css}" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link th:href="@{style.css}" rel="stylesheet">
-</head>
 
 <body>
 
@@ -80,34 +56,11 @@
             </a>
         </li>
 
-
-        <pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</pre>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
         <li class="nav-item">
             <div class="logout">
-                <a class="nav-link " th:href="@{login}">
+                <a class="nav-link " th:href="@{/}">
                     <span class="material-icons">logout</span>
                     <span>Déconnexion</span>
                 </a>

@@ -6,32 +6,38 @@
   <component name="ChangeListManager">
     <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;-Amelioration de l'architecture&#10;-Correction de bugs&#10;Mon Etab v1.0.4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/ReportsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/ReportsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/StudentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/StudentsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/TeachersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/TeachersController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ajouteleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/ajouteleve.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ajoutprofesseur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers/ajoutprofesseur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ajoututilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/reports/rapport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/eleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/eleve.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages-error-404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages-error-404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/professeur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers/professeur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/rapport.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/ajoututilisateur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/utilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/utilisateur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/reports/rapport.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/reports/rapport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students/ajouteleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/ajouteleve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students/eleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/eleve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/teachers/ajoutprofesseur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers/ajoutprofesseur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/teachers/professeur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers/professeur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/ajoututilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/ajoututilisateur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/utilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/utilisateur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/ReportsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/ReportsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/StudentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/StudentsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/TeachersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/TeachersController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/UsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ajouteleve.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ajoutprofesseur.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/ajoututilisateur.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/eleve.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/pages-error-404.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pages-error-404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/professeur.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/rapport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/utilisateur.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/reports/rapport.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/reports/rapport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/students/ajouteleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/students/ajouteleve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/students/eleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/students/eleve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/teachers/ajoutprofesseur.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/teachers/ajoutprofesseur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/teachers/professeur.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/teachers/professeur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/ajoututilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/users/ajoututilisateur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/utilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/users/utilisateur.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +256,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724262590790</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;-Amelioration de l'architecture&#10;-Correction de bugs&#10;Mon Etab v1.0.4">
+      <option name="closed" value="true" />
+      <created>1724271468241</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1724271468241</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;-Amelioration de l'architecture&#10;-Correction de bugs&#10;Mon Etab v1.0.4">
+      <option name="closed" value="true" />
+      <created>1724271511969</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1724271511969</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

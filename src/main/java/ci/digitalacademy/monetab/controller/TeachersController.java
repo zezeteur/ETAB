@@ -10,12 +10,12 @@ public class TeachersController {
 
     @GetMapping
     public String teachers(){
-        return "professeur";
+        return "teachers/professeur";
     }
 
     @GetMapping("/add")
     public String add(){
-        return "ajoutprofesseur";
+        return "teachers/ajoutprofesseur";
     }
 
 }
