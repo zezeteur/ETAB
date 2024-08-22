@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.Optional;
 
 @Slf4j
 @RequiredArgsConstructor
+@Service
 public class UserServiceImpl implements UserService {
 
 
