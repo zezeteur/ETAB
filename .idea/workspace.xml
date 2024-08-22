@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.5">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724322234524</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.5">
+      <option name="closed" value="true" />
+      <created>1724322630112</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1724322630112</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
