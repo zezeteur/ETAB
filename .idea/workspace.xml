@@ -5,27 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;-Creation de logs&#10;Mon Etab v1.0.5">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Adresse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Eleve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/FicheNote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Personne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Professeur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/repositories/AdresseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/repositories/EleveRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/repositories/FicheNoteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/repositories/PersonneRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/repositories/ProfesseurRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/AdresseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/EleveService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/FicheNoteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/AdresseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/EleveServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/FicheNoteServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/PersonneServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/ProfesseurServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/PersonneService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/ProfesseurService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MonEtab.log" beforeDir="false" afterPath="$PROJECT_DIR$/MonEtab.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -361,7 +340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724342713539</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;-Creation de logs&#10;Mon Etab v1.0.5">
+      <option name="closed" value="true" />
+      <created>1724364543383</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1724364543383</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;-Creation de logs&#10;Mon Etab v1.0.5">
+      <option name="closed" value="true" />
+      <created>1724364568510</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1724364568510</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
