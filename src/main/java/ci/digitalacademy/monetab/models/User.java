@@ -11,7 +11,7 @@ import java.time.Instant;
 @Setter
 @Entity
 @Table(name = "user")
-
+@ToString
 public class User {
 
     @Id
@@ -26,5 +26,8 @@ public class User {
 
     @Column(name = "date_creation", nullable = false)
     private Instant creationDate;
+
+    @OneToOne
+    private Adresse adresse;
 
 }

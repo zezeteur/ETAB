@@ -1,10 +1,7 @@
 package ci.digitalacademy.monetab.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
 
@@ -14,6 +11,7 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 @Setter
 @Entity
 @Table(name = "professeur")
+@ToString
 public class Professeur {
 
     @Id

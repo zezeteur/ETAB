@@ -1,10 +1,7 @@
 package ci.digitalacademy.monetab.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.Instant;
 
@@ -16,6 +13,7 @@ import static jakarta.persistence.GenerationType.*;
 @Setter
 @Entity
 @Table(name = "adresse")
+@ToString
 public class Adresse {
 
     @Id
@@ -30,6 +28,7 @@ public class Adresse {
 
     @Column(name = "rue", nullable = false)
     private String rue;
+
 
 
 

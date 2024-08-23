@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
 
-  //  private final Logger log = LoggerFactory.getLogger(UserServiceImpl.class);
+    //  private final Logger log = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Override
     public User save(User user) {
@@ -30,17 +30,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-public User update(User user) {
+    public User update(User user) {
 
         log.debug("Request to update user{}", user);
 
 //return findOne.findById(user.getId())
- //               .map(existingUser->{
+        //               .map(existingUser->{
 //existingUser.setPassword(user.getPassword());
-  //                  existingUser.setPseudo(user.getPseudo());
+        //                  existingUser.setPseudo(user.getPseudo());
 //return existingUser;
-  //              }).map((existingUser-> {
-   //                 return save(existingUser);
+        //              }).map((existingUser-> {
+        //                 return save(existingUser);
 //}).orElseThrow(() -> new IllegalArgumentException());
 
         Optional<User> optionalUser = findOne(user.getId()); //recuperation dun user
@@ -50,13 +50,11 @@ public User update(User user) {
             userToUpdate.setPassword(userToUpdate.getPassword()); // mise a jour du mot de passe
             return save(userToUpdate); // enregistrement de l'utilisateur modifie
 
-        }
-        else {
+        } else {
             throw new IllegalArgumentException();
         }
 
     }
-
 
 
     @Override
