@@ -1,1 +1,4 @@
 2024-08-25T17:56:07.044Z  WARN 13256 --- [monetab] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2d5h53m57s56ms470µs500ns).
+2024-08-25T18:21:04.252Z  INFO 13256 --- [monetab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-25T18:21:04.271Z  INFO 13256 --- [monetab] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-25T18:21:04.411Z  INFO 13256 --- [monetab] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 136 ms
