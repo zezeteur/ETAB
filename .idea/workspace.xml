@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;-Creation de logs&#10;Mon Etab v1.0.5">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MonEtab.log" beforeDir="false" afterPath="$PROJECT_DIR$/MonEtab.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/MonetabApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/MonetabApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/ReportsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/ReportsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Adresse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Adresse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Eleve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Eleve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/FicheNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/FicheNote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Personne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Professeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Professeur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/MonetabApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/MonetabApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/ReportsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/ReportsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/Adresse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/Adresse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/Eleve.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/Eleve.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/FicheNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/FicheNote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/Personne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/Personne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/Professeur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/Professeur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/Impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/Impl/UserServiceImpl.class" afterDir="false" />
-    </list>
+    <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;-Creation de logs&#10;Mon Etab v1.0.5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -419,7 +394,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724400309968</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Mise a jour v1.0.5&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;-Creation de logs&#10;Mon Etab v1.0.5">
+      <option name="closed" value="true" />
+      <created>1724412060693</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1724412060693</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
