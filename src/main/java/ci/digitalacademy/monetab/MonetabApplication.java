@@ -1,18 +1,15 @@
 package ci.digitalacademy.monetab;
-
 import ci.digitalacademy.monetab.models.Adresse;
 import ci.digitalacademy.monetab.models.User;
 import ci.digitalacademy.monetab.services.AdresseService;
 import ci.digitalacademy.monetab.services.UserService;
-import jakarta.persistence.Id;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import java.time.Instant;
 import java.util.List;
-import java.util.Optional;
+
 
 @SpringBootApplication
 public class MonetabApplication implements CommandLineRunner {
@@ -21,6 +18,7 @@ public class MonetabApplication implements CommandLineRunner {
 	private AdresseService adresseService;
 
 	@Autowired
+
 	private UserService userService;
 
 	public static void main(String[] args) {
@@ -30,7 +28,7 @@ public class MonetabApplication implements CommandLineRunner {
 	@Override
 	public void run (String... args) throws Exception {
 
-		Adresse adresse = new Adresse(null, "France", "Abidjan", "Rue fanny");
+		Adresse adresse =new Adresse(null, "France", "Abidjan", "Rue fanny");
 
 		User user = new User(null, "ange", "291020", Instant.now(), adresse);
 
