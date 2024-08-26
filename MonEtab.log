@@ -881,3 +881,6 @@ Caused by: java.sql.SQLSyntaxErrorException: La table 'etab_db.user' n'existe pa
 2024-08-26T17:13:14.536Z  INFO 17616 --- [monetab] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2024-08-26T17:13:14.573Z  INFO 17616 --- [monetab] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2024-08-26T17:13:14.585Z  INFO 17616 --- [monetab] [restartedMain] c.d.monetab.MonetabApplication           : Started MonetabApplication in 7.213 seconds (process running for 7.879)
+2024-08-26T17:16:16.484Z  INFO 17616 --- [monetab] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26T17:16:16.485Z  INFO 17616 --- [monetab] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-26T17:16:16.487Z  INFO 17616 --- [monetab] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
