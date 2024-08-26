@@ -13,13 +13,14 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 @Entity
 @Table(name = "eleve")
 @ToString
-public class Eleve {
+@DiscriminatorValue(value = "eleve")
+public class Eleve extends Personne{
 
-    @Id
-    @GeneratedValue(strategy = IDENTITY)
-    private Long id;
 
     @Column(name = "matricule", nullable = false)
     private String matricule;
+
+    @Column(name = "classe", nullable = false)
+    private String classe;
 
 }

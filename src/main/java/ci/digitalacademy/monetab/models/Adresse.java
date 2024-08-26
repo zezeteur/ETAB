@@ -29,6 +29,9 @@ public class Adresse {
     @Column(name = "rue", nullable = false)
     private String rue;
 
+    @Transient
+    private User user;
+
 
 
 

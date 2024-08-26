@@ -12,14 +12,14 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 @Entity
 @Table(name = "professeur")
 @ToString
-public class Professeur {
-
-    @Id
-    @GeneratedValue(strategy = IDENTITY)
-    private Long id;
+@DiscriminatorValue(value = "professeur")
+public class Professeur extends Personne{
 
     @Column(name = "matiere", nullable = false)
     private String matiere;
+
+    @Column(name = "vacant", nullable = false)
+    private String vacant;
 
 
 }

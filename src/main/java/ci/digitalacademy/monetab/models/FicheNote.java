@@ -25,5 +25,22 @@ public class FicheNote {
     @Column(name = "annee", nullable = false)
     private Integer annee;
 
+    @Column(name = "creationDate", nullable = false)
+    private Integer creationDate;
 
+    @ManyToOne
+    @JoinColumn(name = "professeur_id")
+    private Professeur professeur;
+
+
+    @Override
+    public String toString() {
+        return "FicheNote{" +
+                "id=" + id +
+                ", note=" + note +
+                ", annee=" + annee +
+                ", creationDate=" + creationDate +
+                ", professeur=" + professeur +
+                '}';
+    }
 }

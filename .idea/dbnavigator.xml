@@ -9,6 +9,12 @@
     <value-preview-text-wrapping value="true" />
     <value-preview-pinned value="false" />
   </component>
+  <component name="DBNavigator.Project.DatabaseBrowserManager">
+    <autoscroll-to-editor value="false" />
+    <autoscroll-from-editor value="true" />
+    <show-object-properties value="true" />
+    <loaded-nodes />
+  </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="87ff09c0-fb57-4b0c-abd8-271d882cb73a">
       <console name="etab_db" type="STANDARD" schema="" session="Main" />
@@ -22,9 +28,6 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="87ff09c0-fb57-4b0c-abd8-271d882cb73a" />
-  </component>
-  <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/etab_db.sql" connection-id="87ff09c0-fb57-4b0c-abd8-271d882cb73a" session-id="MAIN" current-schema="mysql" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
