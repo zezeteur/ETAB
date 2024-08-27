@@ -1,9 +1,7 @@
 package ci.digitalacademy.monetab.controller;
 
 
-import ci.digitalacademy.monetab.models.Professeur;
 import ci.digitalacademy.monetab.models.User;
-import ci.digitalacademy.monetab.services.ProfesseurService;
 import ci.digitalacademy.monetab.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;

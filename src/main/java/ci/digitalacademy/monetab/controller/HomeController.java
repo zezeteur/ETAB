@@ -1,10 +1,10 @@
 package ci.digitalacademy.monetab.controller;
 
-import ci.digitalacademy.monetab.models.Eleve;
-import ci.digitalacademy.monetab.models.Professeur;
+import ci.digitalacademy.monetab.models.Student;
+import ci.digitalacademy.monetab.models.Teacher;
 import ci.digitalacademy.monetab.models.User;
-import ci.digitalacademy.monetab.services.EleveService;
-import ci.digitalacademy.monetab.services.ProfesseurService;
+import ci.digitalacademy.monetab.services.StudentService;
+import ci.digitalacademy.monetab.services.TeacherService;
 import ci.digitalacademy.monetab.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -19,18 +19,18 @@ import java.util.List;
 @RequiredArgsConstructor
 public class HomeController {
 
-    public final EleveService eleveService;
-    public final ProfesseurService professeurService;
+    public final StudentService studentService;
+    public final TeacherService professeurService;
     public final UserService userService;
 
     @GetMapping
     public String home(Model model){
 
-        List<Eleve> eleves = eleveService.findAll();
-        model.addAttribute("eleves" , eleves);
+        List<Student> students = studentService.findAll();
+        model.addAttribute("eleves" , students);
 
-        List<Professeur> professeurs = professeurService.findAll();
-        model.addAttribute("professeurs" , professeurs);
+        List<Teacher> teachers = professeurService.findAll();
+        model.addAttribute("teachers" , teachers);
 
         List<User> users = userService.findAll();
         model.addAttribute("users" , users);

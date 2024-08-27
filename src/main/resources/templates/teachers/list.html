@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:insert="~{fragments/fragment :: head}"></head>
+
+<body>
+
+<header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+        <a th:href="@{home}" class="logo d-flex align-items-center">
+            <img th:src="@{img/logo.png}" alt="Logo Mon Etab">
+            <span class="d-none d-lg-block">  Mon Etab</span>
+        </a>
+        <i class="toggle-sidebar-btn"><span class="material-icons">menu</span></i>
+    </div>
+
+</header>
+
+<aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" th:href="@{home}">
+                <span class="material-icons">dashboard</span>
+                </i><span>Tableau de bord </span>
+            </a>
+        </li>
+
+        <li class="nav-item"  >
+            <a class="nav-link collapsed" th:href="@{students}">
+                <i class="fas fa-user-graduate "></i>
+                <span>Elèves</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link "  >
+                <i class="fas fa-chalkboard-teacher"></i><span>Professeurs</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" th:href="@{users}">
+                <i class="fas fa-users"></i><span>Utilisateurs</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" th:href="@{reports}">
+                <i class="fas fa-file-alt"></i><span>Rapports</span>
+            </a>
+        </li>
+
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <li class="nav-item">
+            <div class="logout">
+                <a class="nav-link " th:href="@{/}">
+                    <span class="material-icons">logout</span>
+                    <span>Déconnexion</span>
+                </a>
+            </div>
+        </li>
+    </ul>
+</aside>
+
+<main id="main" class="main">
+
+    <div class="pagetitle">
+        <h1>Professeurs (<span th:text="${teachers.size()}"></span>)</h1>
+    </div>
+
+    <div class="containertable">
+
+        <main>
+            <button  class="boutonajout"><span><a th:href="@{/teachers/add}"> + Nouveau teacher</a></span>
+            </button>
+
+            <table>
+                <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénoms</th>
+                    <th>Matière</th>
+                    <th>Age</th>
+                    <th>Genre</th>
+                    <th>Téléphone</th>
+                    <th>Email</th>
+                    <th>Vacant</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="teacher:${teachers}">
+                    <td th:text="${teacher.getNom}">KOUAKOU</td>
+                    <td th:text="${teacher.getPrenom}">Gregoire</td>
+                    <td th:text="${teacher.getMatiere}">Math</td>
+                    <td th:text="${teacher.getAge}">Non</td>
+                    <td th:text="${teacher.getGenre}">40</td>
+                    <td th:text="${teacher.getTelephone}">0123456789</td>
+                    <td th:text="${teacher.getEmail}">Touba</td>
+                    <td th:text="${teacher.getVacant}">Touba</td>
+
+                    <td>
+                        <button  class="boutonaction1">
+                            <span>
+                                <a th:href="@{/teachers/{id}(id=${teacher.id})}">Modifier</a>
+                            </span>
+                        </button>
+
+                        <button onclick="openModalDelete()" class="boutonaction2" >
+                             <span>
+                            Supprimer
+                        </span>
+                        </button>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <!-- Modal -->
+            <div id="closeModal" class="modal">
+
+                <div class="imodal">a</div>
+                <div class="modal-1">
+                    ATTENTION !!! <br />
+                    <label class="text">
+                        Voulez-vous Supprimer ce teacher ?
+                    </label>
+                    <div class="btn">
+                        <button type="submit3" onclick="btnClose()" id="btnclose" class="btnNo">Non</button>
+                        <button type="cancel2" id="btnOpen" class="btnYes">Oui</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
+
+
+
+        </main>
+    </div>
+</main>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<th:block th:insert="~{fragments/fragment :: js}"></th:block>
+
+</body>
+</html>
+
+

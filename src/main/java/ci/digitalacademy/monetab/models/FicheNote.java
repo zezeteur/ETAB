@@ -30,7 +30,7 @@ public class FicheNote {
 
     @ManyToOne
     @JoinColumn(name = "professeur_id")
-    private Professeur professeur;
+    private Teacher teacher;
 
 
     @Override
@@ -40,7 +40,7 @@ public class FicheNote {
                 ", note=" + note +
                 ", annee=" + annee +
                 ", creationDate=" + creationDate +
-                ", professeur=" + professeur +
+                ", professeur=" + teacher +
                 '}';
     }
 }

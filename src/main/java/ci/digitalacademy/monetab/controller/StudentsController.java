@@ -1,7 +1,7 @@
 package ci.digitalacademy.monetab.controller;
 
-import ci.digitalacademy.monetab.models.Eleve;
-import ci.digitalacademy.monetab.services.EleveService;
+import ci.digitalacademy.monetab.models.Student;
+import ci.digitalacademy.monetab.services.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,13 +15,13 @@ import java.util.List;
 @RequiredArgsConstructor
 public class StudentsController {
 
-    public final EleveService eleveService;
+    public final StudentService studentService;
 
     @GetMapping
     public String students(Model model){
 
-        List<Eleve> eleves = eleveService.findAll();
-        model.addAttribute("eleves" , eleves);
+        List<Student> students = studentService.findAll();
+        model.addAttribute("eleves" , students);
 
         return "students/eleve";
     }

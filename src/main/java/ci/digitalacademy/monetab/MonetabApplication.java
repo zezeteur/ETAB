@@ -1,15 +1,12 @@
 package ci.digitalacademy.monetab;
-import ci.digitalacademy.monetab.models.*;
-import ci.digitalacademy.monetab.services.AdresseService;
-import ci.digitalacademy.monetab.services.EleveService;
-import ci.digitalacademy.monetab.services.ProfesseurService;
+import ci.digitalacademy.monetab.services.AdressService;
+import ci.digitalacademy.monetab.services.StudentService;
+import ci.digitalacademy.monetab.services.TeacherService;
 import ci.digitalacademy.monetab.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import java.time.Instant;
-import java.util.List;
 
 
 @SpringBootApplication
@@ -17,16 +14,16 @@ public class MonetabApplication implements CommandLineRunner {
 
 
 	@Autowired
-	private AdresseService adresseService;
+	private AdressService adressService;
 
 	@Autowired
 	private UserService userService;
 
 	@Autowired
-	private ProfesseurService professeurService;
+	private TeacherService professeurService;
 
 	@Autowired
-	private EleveService eleveService;
+	private StudentService studentService;
 
 
 	public static void main(String[] args) {
@@ -36,6 +33,7 @@ public class MonetabApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
+		/*
 		Eleve eleve = new Eleve();
 		eleve.setMatricule("E2024001");
 		eleve.setNom("Dibi");
@@ -62,30 +60,30 @@ public class MonetabApplication implements CommandLineRunner {
 		eleveService.save(eleve2);
 
 
-		Professeur professeur = new Professeur();
-		professeur.setNom("Goli");
-		professeur.setPrenom("Michel");
-		professeur.setMatiere("Physique/Chimie");
-		professeur.setAge("47");
-		professeur.setGenre("M");
-		professeur.setTelephone("0708932434");
-		professeur.setEmail("michelgoli@gmail.com");
-		professeur.setVacant("Non");
+		Teacher teacher = new Teacher();
+		teacher.setNom("Goli");
+		teacher.setPrenom("Michel");
+		teacher.setMatiere("Physique/Chimie");
+		teacher.setAge("47");
+		teacher.setGenre("M");
+		teacher.setTelephone("0708932434");
+		teacher.setEmail("michelgoli@gmail.com");
+		teacher.setVacant(true);
 
 
-		Professeur professeur2 = new Professeur();
-		professeur2.setNom("Konan");
-		professeur2.setPrenom("Jacques");
-		professeur2.setMatiere("Mathematiques");
-		professeur2.setAge("52");
-		professeur2.setGenre("M");
-		professeur2.setTelephone("0708226231");
-		professeur2.setEmail("konanjak@gmail.com");
-		professeur2.setVacant("Non");
+		Teacher teacher2 = new Teacher();
+		teacher2.setNom("Konan");
+		teacher2.setPrenom("Jacques");
+		teacher2.setMatiere("Mathematiques");
+		teacher2.setAge("52");
+		teacher2.setGenre("M");
+		teacher2.setTelephone("0708226231");
+		teacher2.setEmail("konanjak@gmail.com");
+		teacher2.setVacant(false);
 
 
-		professeurService.save(professeur);
-		professeurService.save(professeur2);
+		professeurService.save(teacher);
+		professeurService.save(teacher2);
 
 
 		User user = new User();

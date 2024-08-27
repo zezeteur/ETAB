@@ -28,6 +28,6 @@ public class User {
     private Instant creationDate;
 
     @OneToOne
-    private Adresse adresse;
+    private Adress adress;
 
 }

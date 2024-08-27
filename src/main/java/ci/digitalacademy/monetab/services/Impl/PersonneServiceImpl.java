@@ -1,7 +1,7 @@
 package ci.digitalacademy.monetab.services.Impl;
 
 
-import ci.digitalacademy.monetab.models.Personne;
+import ci.digitalacademy.monetab.models.Person;
 import ci.digitalacademy.monetab.repositories.PersonneRepository;
 import ci.digitalacademy.monetab.services.PersonneService;
 import lombok.RequiredArgsConstructor;
@@ -20,29 +20,29 @@ public class PersonneServiceImpl implements PersonneService {
 
 
     @Override
-    public Personne save(Personne personne) {
+    public Person save(Person person) {
 
-        return personneRepository.save(personne);
+        return personneRepository.save(person);
     }
 
     @Override
-    public Personne update(Personne personne) {
+    public Person update(Person person) {
 
-        log.debug("Request to update Personne{}", personne);
+        log.debug("Request to update Personne{}", person);
 
         return null;
     }
 
 
     @Override
-    public Optional<Personne> findOne(Long id) {
+    public Optional<Person> findOne(Long id) {
         log.debug("Request to findOne Personne{}", id);
 
         return personneRepository.findById(id);
     }
 
     @Override
-    public List<Personne> findAll() {
+    public List<Person> findAll() {
         log.debug("Request to findAll Personnes");
 
         return personneRepository.findAll();

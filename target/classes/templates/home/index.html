@@ -87,7 +87,7 @@
                         <pre>
 
 
-                                       <h1>                       <span th:text="${eleves.size()}"></span></h1>
+                                       <h1>                       <span th:text="${students.size()}"></span></h1>
 
                         </pre>
                     </div>
@@ -101,7 +101,7 @@
                         <pre>
 
 
-                                       <h1>                       <span th:text="${professeurs.size()}"></span></h1>
+                                       <h1>                       <span th:text="${teachers.size()}"></span></h1>
 
                         </pre>
             </div>
@@ -163,14 +163,19 @@
                                 },
                                 data: [{
 
-                                    value: 600,
+                                    value: 522,
                                     name: 'HOMMES'
 
                                   },
 
                                   {
-                                    value: 400,
+                                    value: 389,
                                     name: 'FEMMES'
+                                  },
+
+                                  {
+                                    value: 97,
+                                    name: 'NON PRÉCISÉS'
                                   },
 
                                 ]
