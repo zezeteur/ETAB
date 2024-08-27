@@ -76,7 +76,7 @@
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Élèves (2)</h1>
+        <h1>Élèves (<span th:text="${eleves.size()}"></span>)</h1>
     </div>
 
     <div class="containertable">
@@ -90,52 +90,26 @@
                 <tr>
                     <th>Nom</th>
                     <th>Prénom</th>
+                    <th>Matricule</th>
                     <th>Genre</th>
                     <th>Classe</th>
-                    <th>Matricule</th>
                     <th>Age</th>
                     <th>Téléphone</th>
-                    <th>Ville</th>
+                    <th>Email</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>KOFFI</td>
-                    <td>George</td>
-                    <td>M</td>
-                    <td>Tle</td>
-                    <td>GDJ7GDGD</td>
-                    <td>25</td>
-                    <td>0123456789</td>
-                    <td>Bonoua</td>
 
-                    <td>
-
-                        <button  class="boutonaction1">
-                            <span>
-                                <a th:href="@{/students/edit}">Modifier</a>
-                            </span>
-                        </button>
-
-
-                        <button onclick="openModalDelete()" class="boutonaction2" >
-                             <span>
-                            Supprimer
-                        </span>
-                        </button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>KONE</td>
-                    <td>Sali</td>
-                    <td>F</td>
-                    <td>2nd</td>
-                    <td>GDJ7GDGD</td>
-                    <td>22</td>
-                    <td>0123456789</td>
-                    <td>Abidjan</td>
+                <tr th:each="eleve:${eleves}">
+                    <td th:text="${eleve.getNom}">KONE</td>
+                    <td th:text="${eleve.getPrenom}">Sali</td>
+                    <td th:text="${eleve.getMatricule}">F</td>
+                    <td th:text="${eleve.getGenre}">2nd</td>
+                    <td th:text="${eleve.getClasse}">GDJ7GDGD</td>
+                    <td th:text="${eleve.getAge}">22</td>
+                    <td th:text="${eleve.getTelephone}">0123456789</td>
+                    <td th:text="${eleve.getEmail}">Abidjan</td>
 
                     <td>
                         <button  class="boutonaction1">

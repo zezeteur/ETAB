@@ -7,6 +7,14 @@
     <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.6&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MonEtab.log" beforeDir="false" afterPath="$PROJECT_DIR$/MonEtab.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/StudentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/StudentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/TeachersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/TeachersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students/eleve.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/eleve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/teachers/professeur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers/professeur.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/utilisateur.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/utilisateur.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,20 +76,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.MonetabApplication.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/herve/OneDrive/Bureau/ATOS ADA/java/GIT/ETAB_V1.3",
-    "settings.editor.selected.configurable": "preferences.updates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MonetabApplication.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/herve/OneDrive/Bureau/ATOS ADA/java/GIT/ETAB_V1.3&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\herve\OneDrive\Bureau\ATOS ADA\java\GIT\ETAB_V1.3\src\main\resources\templates\home" />
@@ -478,7 +486,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724692600664</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Mise a jour v1.0.6&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.6">
+      <option name="closed" value="true" />
+      <created>1724693183948</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1724693183948</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

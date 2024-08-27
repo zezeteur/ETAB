@@ -72,7 +72,7 @@
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Utilisateurs (2)</h1>
+        <h1>Utilisateurs (<span th:text="${users.size()}"></span>)</h1>
     </div>
 
     <div class="containertable">
@@ -85,27 +85,17 @@
                 <thead>
                 <tr>
                     <th>Pseudo</th>
+                    <th>Mot de passe</th>
                     <th>Date de création</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>admin</td>
-                    <td>16/08/2024</td>
 
-                    <td>
-                        <button  class="boutonaction1">
-                            <span>
-                                <a th:href="@{/users/edit}">Modifier</a>
-                            </span>
-                        </button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>user2</td>
-                    <td>13/08/2024</td>
+                <tr th:each="user:${users}">
+                    <td th:text="${user.getPseudo}">user2</td>
+                    <td th:text="${user.getPassword}">13/08/2024</td>
+                    <td th:text="${#dates.format(user.getCreationDate(),'dd/MM/yyyy - HH:mm')}">13/08/2024</td>
 
                     <td>
                         <button  class="boutonaction1">
