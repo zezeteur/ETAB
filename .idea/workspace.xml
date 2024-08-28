@@ -4,26 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.8&#10;-mise a jour de l'architecture&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.8">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/modal.js" afterDir="false" />
+    <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.9&#10;-mise a jour de l'architecture&#10;-Ajout fonctionnalite de suppression&#10;-Correction de bugs&#10;Mon Etab v1.0.9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MonEtab.log" beforeDir="false" afterPath="$PROJECT_DIR$/MonEtab.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/MonetabApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/MonetabApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/StudentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/StudentsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/TeachersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/TeachersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/reports/generate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/reports/generate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/forms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/teachers/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers/forms.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/teachers/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/MonetabApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/MonetabApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/StudentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/StudentsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/TeachersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/TeachersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/students/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/students/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/teachers/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/teachers/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,22 +132,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724059915200</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Mise a jour 1.0.4&#10;-Interface utilisateur&#10;-Correction de bugs&#10;Mon Etab v1.0.4">
-      <option name="closed" value="true" />
-      <created>1724169386882</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1724169386882</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;-Correction de bugs&#10;Mon Etab v1.0.4">
-      <option name="closed" value="true" />
-      <created>1724169627959</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1724169627959</updated>
     </task>
     <task id="LOCAL-00004" summary="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;- Amelioration de l'architecture&#10;-Correction de bugs&#10;Mon Etab v1.0.4">
       <option name="closed" value="true" />
@@ -536,7 +509,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724849359150</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Mise a jour v1.0.9&#10;-mise a jour de l'architecture&#10;-Ajout fonctionnalite de suppression&#10;-Correction de bugs&#10;Mon Etab v1.0.9">
+      <option name="closed" value="true" />
+      <created>1724862326368</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1724862326369</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Mise a jour v1.0.9&#10;-mise a jour de l'architecture&#10;-Ajout fonctionnalite de suppression&#10;-Correction de bugs&#10;Mon Etab v1.0.9">
+      <option name="closed" value="true" />
+      <created>1724862353004</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1724862353004</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -575,7 +564,8 @@
     <MESSAGE value="Mise a jour v1.0.6&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.6" />
     <MESSAGE value="Mise a jour v1.0.7&#10;-Connexion base de donnees&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.7" />
     <MESSAGE value="Mise a jour v1.0.8&#10;-mise a jour de l'architecture&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise a jour v1.0.8&#10;-mise a jour de l'architecture&#10;-Optimisation du code&#10;-Correction de bugs&#10;Mon Etab v1.0.8" />
+    <MESSAGE value="Mise a jour v1.0.9&#10;-mise a jour de l'architecture&#10;-Ajout fonctionnalite de suppression&#10;-Correction de bugs&#10;Mon Etab v1.0.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise a jour v1.0.9&#10;-mise a jour de l'architecture&#10;-Ajout fonctionnalite de suppression&#10;-Correction de bugs&#10;Mon Etab v1.0.9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
