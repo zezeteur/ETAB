@@ -285,6 +285,29 @@
 })();
 
 
+// script.js
+
+const toggleSwitch = document.getElementById('toggle-switch');
+
+// Vérifie le mode stocké dans le localStorage
+if (localStorage.getItem('dark-mode') === 'true') {
+    document.body.classList.add('dark-mode');
+    toggleSwitch.checked = true;
+}
+
+// Ajoute un écouteur d'événement pour basculer entre les modes
+toggleSwitch.addEventListener('change', () => {
+    if (toggleSwitch.checked) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('dark-mode', 'true');
+    } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('dark-mode', 'false');
+    }
+});
+
+
+
 
 
 

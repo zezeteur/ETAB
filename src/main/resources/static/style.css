@@ -1214,6 +1214,7 @@ icon color: red;
 
 .carddashboard{
 
+
           }
 
 
@@ -1243,6 +1244,7 @@ margin-left: 20px;
        border-radius: 5px;
        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
+
 
 table {
     width: 100%;
@@ -1427,3 +1429,82 @@ padding-right: 20px;
     background-color: red;  
 
                 }
+
+
+
+/* style.css */
+
+/* Styles par défaut (Mode Clair) */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styles pour le mode sombre */
+.dark-mode {
+    background-color: #1c2025; /* Couleur de fond pour le mode sombre */
+    color: black; /* Couleur de texte pour le mode sombre */
+}
+
+/* Style du container du toggle switch */
+.toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+}
+
+/* Masque la case à cocher réelle */
+.toggle-switch {
+    display: none;
+}
+
+/* Style du label du switch */
+.toggle-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 25px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+/* Icône de soleil et de lune */
+.toggle-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2.5px;
+    transition: transform 0.3s;
+}
+
+.sun {
+    left: 5px;
+    color: #1c2025; /* Couleur pour le soleil */
+}
+
+.moon {
+    right: 5px;
+    color: #1c2025; /* Couleur pour la lune */
+}
+
+/* Bascule de l'icône avec le switch */
+.toggle-switch:checked + .toggle-label {
+    background-color: #333;
+
+}
+
+.toggle-switch:checked + .toggle-label .sun {
+    transform: translateX(25px);
+     display: none;
+}
+
+.toggle-switch:checked + .toggle-label .moon {
+    transform: translateX(0px);
+
+
+}
