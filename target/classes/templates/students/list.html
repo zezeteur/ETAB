@@ -4,7 +4,7 @@
       xmlns:th="http://www.thymeleaf.org">
 
 <head th:insert="~{fragments/fragment :: head}">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -146,10 +146,11 @@
 
                         <div class="imodal">a</div>
                         <div class="modal-1">
-                            ATTENTION !!! <br/><br/>
+                            <strong>ATTENTION !</strong>
+                            <iframe class="trash" src="https://lottie.host/embed/e5bef1fb-e325-47a8-85d3-bddc5f8c351a/nADN8RQQle.json"></iframe>
                             <label class="text">
                                 Voulez-vous Supprimer cet élève ?
-                            </label><br/>
+                            </label>
                             <div class="btn">
                                 <button type="submit3" onclick="closeModal()" id="btnClose" class="btnNo">Non</button>
                                 <button type="cancel2" onclick="deleteStudent(this.dataset.id)" th:attr="data-id=${student.id}" id="btnYes" class="btnYes">Oui</button>

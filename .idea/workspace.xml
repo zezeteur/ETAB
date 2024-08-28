@@ -133,14 +133,6 @@
       <option name="presentableId" value="Default" />
       <updated>1724059915200</updated>
     </task>
-    <task id="LOCAL-00004" summary="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;- Amelioration de l'architecture&#10;-Correction de bugs&#10;Mon Etab v1.0.4">
-      <option name="closed" value="true" />
-      <created>1724174507981</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1724174507981</updated>
-    </task>
     <task id="LOCAL-00005" summary="Mise a jour v1.0.4&#10;-Interface utilisateur&#10;- Amelioration de l'architecture&#10;-Correction de bugs&#10;Mon Etab v1.0.4">
       <option name="closed" value="true" />
       <created>1724174537144</created>
@@ -525,7 +517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724862353004</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Mise a jour v1.0.9&#10;-mise a jour de l'architecture&#10;-Ajout fonctionnalite de suppression&#10;-Correction de bugs&#10;Mon Etab v1.0.9">
+      <option name="closed" value="true" />
+      <created>1724862951260</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1724862951261</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
