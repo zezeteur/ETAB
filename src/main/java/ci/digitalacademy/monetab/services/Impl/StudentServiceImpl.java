@@ -1,6 +1,5 @@
 package ci.digitalacademy.monetab.services.Impl;
 
-
 import ci.digitalacademy.monetab.models.Student;
 import ci.digitalacademy.monetab.repositories.StudentRepository;
 import ci.digitalacademy.monetab.services.StudentService;
@@ -17,43 +16,39 @@ import java.util.Optional;
 public class StudentServiceImpl implements StudentService {
 
     private final StudentRepository studentRepository;
-    
 
     @Override
     public Student save(Student student) {
+        log.debug("Request to save Student{}", student);
 
         return studentRepository.save(student);
     }
 
     @Override
     public Student update(Student student) {
-
-        log.debug("Request to update Eleve{}", student);
+        log.debug("Request to update Student{}", student);
 
         return null;
     }
 
-
     @Override
     public Optional<Student> findOne(Long id) {
-        log.debug("Request to findOne Eleve{}", id);
+        log.debug("Request to findOne Student{}", id);
 
         return studentRepository.findById(id);
     }
 
     @Override
     public List<Student> findAll() {
-        log.debug("Request to findAll Eleves");
+        log.debug("Request to findAll Students");
 
         return studentRepository.findAll();
     }
 
     @Override
     public void delete(Long id) {
-        log.debug("Request to delete Eleve{}", id);
+        log.debug("Request to delete Student{}", id);
 
         studentRepository.deleteById(id);
-
     }
-    
 }

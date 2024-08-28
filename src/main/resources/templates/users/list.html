@@ -39,7 +39,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" th:href="@{teacher}">
+            <a class="nav-link collapsed" th:href="@{teachers}">
                 <i class="fas fa-chalkboard-teacher"></i><span>Professeurs</span>
             </a>
         </li>
@@ -78,15 +78,13 @@
     <div class="containertable">
 
         <main>
-            <button  class="boutonajout"><span><a th:href="@{users/add}"> + Nouveau utilisateur</a></span>
+            <button  class="boutonajout"><span><a th:href="@{/users/add}"> + Nouvel utilisateur</a></span>
             </button>
 
             <table>
                 <thead>
                 <tr>
                     <th>Pseudo</th>
-                    <th>Mot de passe</th>
-                    <th>Date de création</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
@@ -94,13 +92,11 @@
 
                 <tr th:each="user:${users}">
                     <td th:text="${user.getPseudo}">user2</td>
-                    <td th:text="${user.getPassword}">13/08/2024</td>
-                    <td th:text="${#dates.format(user.getCreationDate(),'dd/MM/yyyy - HH:mm')}">13/08/2024</td>
 
                     <td>
                         <button  class="boutonaction1">
                             <span>
-                                <a th:href="@{/users/edit}">Modifier</a>
+                                <a th:href="@{/users/{id}(id=${user.id})}">Modifier</a>
                             </span>
                         </button>
                     </td>

@@ -24,10 +24,9 @@ public class User {
     @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(name = "date_creation", nullable = false)
-    private Instant creationDate;
+    @Column(name = "dateCreation")
+    private Instant dateCreation = Instant.now();
 
     @OneToOne
     private Adress adress;
-
 }

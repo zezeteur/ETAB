@@ -1,19 +1,19 @@
 package ci.digitalacademy.monetab.services;
 
-import ci.digitalacademy.monetab.models.Adress;
+import ci.digitalacademy.monetab.services.dto.AdressDTO;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface AdressService {
 
-    Adress save(Adress adress);
+    AdressDTO save(AdressDTO adress);
 
-    Adress update(Adress adress);
+    AdressDTO update(AdressDTO adress);
 
-    Optional<Adress> findOne(Long id);
+    Optional<AdressDTO> findOne(Long id);
 
-    List<Adress> findAll();
+    List<AdressDTO> findAll();
 
     void delete(Long id);
 

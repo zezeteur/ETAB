@@ -2,7 +2,6 @@ package ci.digitalacademy.monetab.models;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 import static jakarta.persistence.GenerationType.*;
 
 @NoArgsConstructor
@@ -29,8 +28,4 @@ public class Adress {
 
     @Transient
     private User user;
-
-
-
-
 }

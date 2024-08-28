@@ -1,8 +1,4 @@
 package ci.digitalacademy.monetab;
-import ci.digitalacademy.monetab.services.AdressService;
-import ci.digitalacademy.monetab.services.StudentService;
-import ci.digitalacademy.monetab.services.TeacherService;
-import ci.digitalacademy.monetab.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -11,19 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class MonetabApplication implements CommandLineRunner {
-
-
-	@Autowired
-	private AdressService adressService;
-
-	@Autowired
-	private UserService userService;
-
-	@Autowired
-	private TeacherService professeurService;
-
-	@Autowired
-	private StudentService studentService;
 
 
 	public static void main(String[] args) {

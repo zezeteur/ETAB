@@ -43,7 +43,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" th:href="@{teacher}">
+            <a class="nav-link collapsed" th:href="@{teachers}">
                 <i class="fas fa-chalkboard-teacher"></i><span>Professeurs</span>
             </a>
         </li>
@@ -89,11 +89,11 @@
                 <thead>
                 <tr>
                     <th>Nom</th>
-                    <th>Prénom</th>
+                    <th>Prénoms</th>
                     <th>Matricule</th>
                     <th>Genre</th>
                     <th>Classe</th>
-                    <th>Age</th>
+                    <th>Date de naissance</th>
                     <th>Téléphone</th>
                     <th>Email</th>
                     <th>Actions</th>
@@ -107,18 +107,18 @@
                     <td th:text="${student.getMatricule}">F</td>
                     <td th:text="${student.getGenre}">2nd</td>
                     <td th:text="${student.getClasse}">GDJ7GDGD</td>
-                    <td th:text="${student.getAge}">22</td>
+                    <td th:text="${student.getDateNaissance}">22</td>
                     <td th:text="${student.getTelephone}">0123456789</td>
                     <td th:text="${student.getEmail}">Abidjan</td>
 
                     <td>
                         <button  class="boutonaction1">
                             <span>
-                                <a th:href="@{/students/edit}">Modifier</a>
+                                <a th:href="@{/students/{id}(id=${student.id})}">Modifier</a>
                             </span>
                         </button>
 
-                        <button onclick="openModalDelete()" class="boutonaction2">
+                        <button id="btnOpen" onclick="openModalDelete(this.dataset.id)" th:attr="data-id=${student.id}" class="boutonaction2">
                              <span>
                             Supprimer
                         </span>
@@ -138,8 +138,8 @@
                         Voulez-vous Supprimer cet élève ?
                     </label>
                     <div class="btn">
-                        <button type="submit3" onclick="btnClose()" id="btnclose" class="btnNo">Non</button>
-                        <button type="cancel2" id="btnOpen" class="btnYes">Oui</button>
+                        <button type="submit3" onclick="btnClose()" id="btnNo" class="btnNo">Non</button>
+                        <button type="cancel2" onclick="deleteStudent()" id="btnYes" class="btnYes">Oui</button>
                     </div>
                 </div>
             </div>

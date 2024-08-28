@@ -5,7 +5,6 @@
 
 <head th:insert="~{fragments/fragment :: head}"></head>
 
-
 <body>
 
 <header id="header" class="header fixed-top d-flex align-items-center">
@@ -39,7 +38,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" th:href="@{teacher}">
+            <a class="nav-link collapsed" th:href="@{teachers}">
                 <i class="fas fa-chalkboard-teacher"></i><span>Professeurs</span>
             </a>
         </li>
@@ -82,12 +81,12 @@
             <div class="options">
                 <select id="rapport">
                     <option value="students">Liste des élèves</option>
-                    <option value="teacher">Liste des teacher</option>
-                    <option value="utilisateurs">Liste des utilisateurs</option>
+                    <option value="teachers">Liste des professeurs</option>
+                    <option value="users">Liste des utilisateurs</option>
                 </select>
 
-                <button class="annuler" type="reset">Générer format PDF</button>
-                <button class="enregistrer" type="submit">Générer format Excel</button>
+                <button class="annuler" type="reset"><i class="bi bi-file-earmark-pdf-fill">Générer format PDF</i></button>
+                <button class="enregistrer" type="submit"><i class="bi bi-file-earmark-excel-fill">Générer format Excel</i></button>
             </div>
         </main>
     </div>
@@ -95,10 +94,7 @@
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-<script th:src="@{vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
-<script th:src="@{vendor/quill/quill.min.js}"></script>
-<script th:src="@{vendor/tinymce/tinymce.min.js}"></script>
-<script th:src="@{main.js}"></script>
+<th:block th:insert="~{fragments/fragment :: js}"></th:block>
 
 </body>
 </html>

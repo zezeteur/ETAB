@@ -3,7 +3,7 @@
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 
-<head th:insert="~{fragments/fragmentajout :: headajout}"></head>
+<head th:insert="~{fragments/fragmentforms :: headforms}"></head>
 
 <body>
 
@@ -71,7 +71,7 @@
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1 th:text="${teacher.id == null}?'Ajouter professeur':'Modifier professeur'" ></h1>
+        <h1 th:text="${teacher.id == null}?'Ajouter un professeur':'Modifier professeur'" ></h1>
     </div>
 
     <div class="containertable">
@@ -88,25 +88,29 @@
                 <label for="nom">Nom:</label>
                 <input th:field="*{nom}" type="text" id="nom" name="nom">
 
-                <label for="prenom">Prénom:</label>
+                <label for="prenom">Prénoms:</label>
                 <input th:field="*{prenom}" type="text" id="prenom" name="prenom">
 
-                <label>Genre:</label>  
-                <input th:field="*{genre}" type="radio" id="homme" name="sexe" value="M">
+                <label>Genre :</label>  
+
+                <input th:field="*{genre}" type="radio" id="homme" name="genre" value="M">
                 <label for="homme">Homme</label>
-                <input th:field="*{genre}" type="radio" id="femme" name="sexe" value="F">
+
+                <input th:field="*{genre}" type="radio" id="femme" name="genre" value="F">
                 <label for="femme">Femme</label>  
 
-                <label>Vacant:</label>  
-                <input th:field="*{vacant}" type="radio" name="sexe" value="true">
-                <label>Oui</label>
-                <input th:field="*{vacant}" type="radio" name="sexe" value="false">
-                <label>Non</label>  
+                <input th:field="*{genre}" type="radio" id="autre" name="genre" value="Non précisé">
+                <label for="autre">Non précisé</label>  
 
+                <label>Vacant:</label>  
+                <input th:field="*{vacant}" type="radio" name="sexe" value="Oui">
+                <label>Oui</label>
+                <input th:field="*{vacant}" type="radio" name="sexe" value="Non">
+                <label>Non</label>  
 
                 <label for="matiere">Matière :</label>
                 <select th:field="*{matiere}" id="matiere" name="matiere">
-                    <option value="Math">Math</option>
+                    <option value="Mathematiques">Mathématiques</option>
                     <option value="Physique">Physique</option>
                     <option value="EPS">EPS</option>
                     <option value="Anglais">Anglais</option>
@@ -115,11 +119,14 @@
                     <option value="Francais">Francais</option>
                 </select>  
 
-                <label for="date">Date de naissance:</label>
-                <input th:field="*{age}" type="date" id="date" name="date">
+                <label for="dateNaissance">Date de naissance :</label>
+                <input th:field="*{dateNaissance}" type="date" id="dateNaissance" name="date">
 
                 <label for="telephone">Téléphone:</label>
                 <input th:field="*{telephone}" type="tel" id="telephone" name="telephone">
+
+                <label for="email">Email :</label>
+                <input th:field="*{email}" type="text" id="email" name="email">
 
                 <button class="annuler" type="reset">Annuler</button>
 
@@ -131,7 +138,7 @@
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-<th:block th:insert="~{fragments/fragmentajout :: jsajout}"></th:block>
+<th:block th:insert="~{fragments/fragmentforms :: jsforms}"></th:block>
 
     </body>
 </html>

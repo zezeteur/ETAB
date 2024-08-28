@@ -3,6 +3,8 @@ package ci.digitalacademy.monetab.models;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.Date;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -28,14 +30,12 @@ public abstract class Person {
     @Column(name = "genre", nullable = false)
     private String genre;
 
-    @Column(name = "age", nullable = false)
-    private String age;
+    @Column(name = "dateNaissance", nullable = false)
+    private String dateNaissance;
 
     @Column(name = "email", unique = true)
     private String email;
 
     @Column(name = "telephone", nullable = false)
     private String telephone;
-
-
 }

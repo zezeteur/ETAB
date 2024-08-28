@@ -3,7 +3,7 @@
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 
-<head th:insert="~{fragments/fragmentajout :: headajout}"></head>
+<head th:insert="~{fragments/fragmentforms :: headforms}"></head>
 
 <body>
 
@@ -39,7 +39,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" th:href="@{/teacher}">
+            <a class="nav-link collapsed" th:href="@{/teachers}">
                 <i class="fas fa-chalkboard-teacher"></i><span>Professeurs</span>
             </a>
 
@@ -73,7 +73,7 @@
 <main id="main" class="main">
 
     <div class="pagetitle">
-        <h1>Ajouter un élève</h1>
+        <h1 th:text="${student.id == null}?'Ajouter un élève':'Modifier élève'" ></h1>
     </div>
 
     <div class="containertable">
@@ -81,24 +81,32 @@
             <button  class="boutonajout"><span> <a th:href="@{/students}" >< Retour</a></span>
             </button>
 
-            <form>
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom">
+            <form th:object="${student}" th:action="@{/students}" method="post">
 
-                <label for="prenom">Prénom:</label>
-                <input type="text" id="prenom" name="prenom">
+                <input th:field="*{id}" hidden type="text">
 
-                <label>Sexe:</label>  
-                <input type="radio" id="homme" name="sexe" value="M">
+                <label for="nom">Nom :</label>
+                <input th:field="*{nom}" type="text" id="nom" name="nom">
+
+                <label for="prenom">Prénoms :</label>
+                <input th:field="*{prenom}" type="text" id="prenom" name="prenom">
+
+                <label for="matricule">Matricule:</label>
+                <input th:field="*{matricule}" type="text" id="matricule" name="matricule">
+
+                <label>Genre :</label>  
+                <input th:field="*{genre}" type="radio" id="homme" name="genre" value="M">
                 <label for="homme">Homme</label>
-                <input type="radio" id="femme" name="sexe" value="F">
+
+                <input th:field="*{genre}" type="radio" id="femme" name="genre" value="F">
                 <label for="femme">Femme</label>  
-                <input type="radio" id="autre" name="sexe" value="Non précisé">
-                <label for="femme">Non précisé</label>  
+
+                <input th:field="*{genre}" type="radio" id="autre" name="genre" value="Non précisé">
+                <label for="autre">Non précisé</label>  
 
 
                 <label for="classe">Classe :</label>
-                <select id="classe" name="classe">
+                <select th:field="*{classe}" id="classe" name="classe">
                     <option value="Tle">Tle</option>
                     <option value="1ere">1ère</option>
                     <option value="2nd">2nde</option>
@@ -108,17 +116,15 @@
                     <option value="6eme">6ème</option>
                 </select>  
 
-                <label for="matricule">Matricule:</label>
-                <input type="text" id="matricule" name="matricule">
 
-                <label for="date">Date de naissance:</label>
-                <input type="date" id="date" name="date">
+                <label for="dateNaissance">Date de naissance:</label>
+                <input th:field="*{dateNaissance}" type="date" id="dateNaissance" name="date">
 
                 <label for="telephone">Téléphone:</label>
-                <input type="tel" id="telephone" name="telephone">
+                <input th:field="*{telephone}" type="tel" id="telephone" name="telephone">
 
-                <label for="ville">Ville:</label>
-                <input type="text" id="ville" name="ville">
+                <label for="email">Email :</label>
+                <input th:field="*{email}" type="text" id="email" name="email">
 
                 <button class="annuler" type="reset">Annuler</button>
                 <button class="enregistrer" type="submit">Enregistrer</button>
@@ -129,7 +135,7 @@
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-<th:block th:insert="~{fragments/fragmentajout :: jsajout}"></th:block>
+<th:block th:insert="~{fragments/fragmentforms :: jsforms}"></th:block>
 
 </body>
 </html>

@@ -22,7 +22,6 @@ public class TeachersController {
 
     public final TeacherService teacherService;
 
-
     @GetMapping
     public String showTeachersList(Model model){
         log.debug("Request to show teachers list");
@@ -36,6 +35,7 @@ public class TeachersController {
     public String saveTeacher(Teacher teacher){
         log.debug("Request to save teacher :{}", teacher);
         teacherService.save(teacher);
+
         return "redirect:/teachers";
     }
 
@@ -43,6 +43,7 @@ public class TeachersController {
     public String showUpdateTeacherForms(Model model, @PathVariable Long id){
         log.debug("Request to show update teacher forms");
         Optional<Teacher> teacher = teacherService.findOne(id);
+
         if (teacher.isPresent()){
             model.addAttribute("teacher" , teacher.get());
             return "teachers/forms";
@@ -57,5 +58,4 @@ public class TeachersController {
         model.addAttribute("teacher", new Teacher());
         return "teachers/forms";
     }
-
 }

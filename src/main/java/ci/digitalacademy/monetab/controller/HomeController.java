@@ -20,16 +20,16 @@ import java.util.List;
 public class HomeController {
 
     public final StudentService studentService;
-    public final TeacherService professeurService;
+    public final TeacherService teacherService;
     public final UserService userService;
 
     @GetMapping
     public String home(Model model){
 
         List<Student> students = studentService.findAll();
-        model.addAttribute("eleves" , students);
+        model.addAttribute("students" , students);
 
-        List<Teacher> teachers = professeurService.findAll();
+        List<Teacher> teachers = teacherService.findAll();
         model.addAttribute("teachers" , teachers);
 
         List<User> users = userService.findAll();

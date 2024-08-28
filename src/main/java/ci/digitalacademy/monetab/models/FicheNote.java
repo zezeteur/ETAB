@@ -32,7 +32,6 @@ public class FicheNote {
     @JoinColumn(name = "professeur_id")
     private Teacher teacher;
 
-
     @Override
     public String toString() {
         return "FicheNote{" +

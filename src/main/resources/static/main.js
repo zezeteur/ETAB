@@ -291,12 +291,14 @@
 
   // Script for Modal
 
-  function openModalDelete() {
-    var closeModal = document.getElementById("closeModal");
-    closeModal.style.display = "flex";
-  }
 
-  function btnClose() {
-    var closeModal = document.getElementById("closeModal");
-    closeModal.style.display = "none";
-  }
+
+    var deleteId = null;
+
+    function openModalDelete(id) {
+        console.log("ID reçu pour suppression:", id); // Affiche l'ID dans la console pour débogage
+        deleteId = id;
+        document.getElementById("btnOpen").style.display = "flex";
+    }
+
+

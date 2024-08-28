@@ -17,7 +17,5 @@ public class Teacher extends Person {
     private String matiere;
 
     @Column(name = "vacant", nullable = false)
-    private Boolean vacant;
-
-
+    private String vacant;
 }

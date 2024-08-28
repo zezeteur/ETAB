@@ -14,11 +14,9 @@ import lombok.*;
 @DiscriminatorValue(value = "eleve")
 public class Student extends Person {
 
-
     @Column(name = "matricule", nullable = false)
     private String matricule;
 
     @Column(name = "classe", nullable = false)
     private String classe;
-
 }
