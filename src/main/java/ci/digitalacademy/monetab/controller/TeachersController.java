@@ -4,6 +4,8 @@ import ci.digitalacademy.monetab.models.Teacher;
 import ci.digitalacademy.monetab.services.TeacherService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -57,5 +59,15 @@ public class TeachersController {
         log.debug("Request to show add teacher forms");
         model.addAttribute("teacher", new Teacher());
         return "teachers/forms";
+    }
+
+    @GetMapping("/delete/{id}")
+    public ResponseEntity<String> deleteTeacher(@PathVariable Long id) {
+        try {
+            teacherService.delete(id); // Appelle la méthode de suppression dans le service
+            return new ResponseEntity<>("Teacher deleted successfully", HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>("Error deleting student", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 }

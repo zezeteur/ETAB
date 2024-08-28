@@ -16,6 +16,7 @@ public class MonetabApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
+
 		/*
 		Eleve eleve = new Eleve();
 		eleve.setMatricule("E2024001");
@@ -27,31 +28,8 @@ public class MonetabApplication implements CommandLineRunner {
 		eleve.setTelephone("0173809750");
 		eleve.setEmail("hervedibi29@gmail.com");
 
-
-		Eleve eleve2 = new Eleve();
-		eleve2.setMatricule("E2024002");
-		eleve2.setNom("Bamba");
-		eleve2.setPrenom("Donourouh Ahmed");
-		eleve2.setGenre("M");
-		eleve2.setClasse("Tle C");
-		eleve2.setAge("19");
-		eleve2.setTelephone("0714006416");
-		eleve2.setEmail("bambahmed@gmail.com");
-
-
 		eleveService.save(eleve);
-		eleveService.save(eleve2);
 
-
-		Teacher teacher = new Teacher();
-		teacher.setNom("Goli");
-		teacher.setPrenom("Michel");
-		teacher.setMatiere("Physique/Chimie");
-		teacher.setAge("47");
-		teacher.setGenre("M");
-		teacher.setTelephone("0708932434");
-		teacher.setEmail("michelgoli@gmail.com");
-		teacher.setVacant(true);
 
 
 		Teacher teacher2 = new Teacher();
@@ -65,7 +43,6 @@ public class MonetabApplication implements CommandLineRunner {
 		teacher2.setVacant(false);
 
 
-		professeurService.save(teacher);
 		professeurService.save(teacher2);
 
 
@@ -74,49 +51,10 @@ public class MonetabApplication implements CommandLineRunner {
 		user.setPassword("admin");
 		user.setCreationDate(Instant.now());
 
-		User user2 = new User();
-		user2.setPseudo("ange");
-		user2.setPassword("29102001");
-		user2.setCreationDate(Instant.now());
 
 		userService.save(user);
-		userService.save(user2);
 
-
-
-
-
-
-
-
-		/*
-		Adresse adresse = new Adresse(null, "France", "Abidjan", "Rue fanny");
-
-		User user = new User(null, "ange", "291020", Instant.now(), adresse);
-
-		adresseService.save(adresse);
-		userService.save(user);
-
-
-		List<User> users = userService.findAll();
-		System.out.println(users);
-
-
-		//Optional<User> optionalUser = userService.findOne(1L);
-		//System.out.println(optionalUser);
-
-		//Optional<User> optionalUser = userService.findOne(1L);
-		//System.out.println(optionalUser);
-
-		//	user.setPseudo("ange29");
-
-		//	userService.save(user);
-
-		//	userService.delete(user.getId());
-
-		 */
-
-
+*/
 	}
 
 }

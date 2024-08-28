@@ -74,6 +74,22 @@
         <h1 th:text="${user.id == null}?'Ajouter un utilisateur':'Modifier utilisateur'"></h1>
     </div>
 
+    <div class="pagetitle">
+        <nav>
+            <ol class="breadcrumb">
+
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a th:href="@{/home}"><i class="bi bi-house-door"></i></a></li>
+                        <li class="breadcrumb-item"><a th:href="@{/users}">Utilisateurs</a></li>
+                        <li class="breadcrumb-item active" th:text="${user.id == null}?'Ajout':'Modification'"></li>
+                    </ol>
+                </nav>
+
+            </ol>
+        </nav>
+    </div>
+
     <div class="containertable">
 
         <main>

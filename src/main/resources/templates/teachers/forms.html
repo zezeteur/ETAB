@@ -74,6 +74,22 @@
         <h1 th:text="${teacher.id == null}?'Ajouter un professeur':'Modifier professeur'" ></h1>
     </div>
 
+    <div class="pagetitle">
+        <nav>
+            <ol class="breadcrumb">
+
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a th:href="@{/home}"><i class="bi bi-house-door"></i></a></li>
+                        <li class="breadcrumb-item"><a th:href="@{/teachers}">Professeurs</a></li>
+                        <li class="breadcrumb-item active" th:text="${teacher.id == null}?'Ajout':'Modification'"></li>
+                    </ol>
+                </nav>
+
+            </ol>
+        </nav>
+    </div>
+
     <div class="containertable">
 
         <main>

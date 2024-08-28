@@ -4,7 +4,7 @@
       xmlns:th="http://www.thymeleaf.org">
 
 <head th:insert="~{fragments/fragment :: head}">
-
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -79,6 +79,23 @@
         <h1>Élèves (<span th:text="${students.size()}"></span>)</h1>
     </div>
 
+    <div class="pagetitle">
+        <nav>
+            <ol class="breadcrumb">
+
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a th:href="@{home}"><i class="bi bi-house-door"></i></a></li>
+                        <li class="breadcrumb-item active">Élèves</li>
+                    </ol>
+                </nav>
+
+            </ol>
+        </nav>
+    </div>
+
+
+
     <div class="containertable">
 
         <main>
@@ -118,32 +135,34 @@
                             </span>
                         </button>
 
-                        <button id="btnOpen" onclick="openModalDelete(this.dataset.id)" th:attr="data-id=${student.id}" class="boutonaction2">
+                        <button onclick="openModalDelete(this.dataset.id)" th:attr="data-id=${student.id}" class="boutonaction2">
                              <span>
                             Supprimer
                         </span>
                         </button>
                     </td>
+
+                    <div id="closeModal" class="modal">
+
+                        <div class="imodal">a</div>
+                        <div class="modal-1">
+                            ATTENTION !!! <br />
+                            <label class="text">
+                                Voulez-vous Supprimer cet élève ?
+                            </label>
+                            <div class="btn">
+                                <button type="submit3" onclick="closeModal()" id="btnClose" class="btnNo">Non</button>
+                                <button type="cancel2" onclick="deleteStudent(this.dataset.id)" th:attr="data-id=${student.id}" id="btnYes" class="btnYes">Oui</button>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </tr>
                 </tbody>
             </table>
 
-            <!-- Modal -->
-            <div id="closeModal" class="modal">
 
-                <div class="imodal">a</div>
-                <div class="modal-1">
-                    ATTENTION !!! <br />
-                    <label class="text">
-                        Voulez-vous Supprimer cet élève ?
-                    </label>
-                    <div class="btn">
-                        <button type="submit3" onclick="btnClose()" id="btnNo" class="btnNo">Non</button>
-                        <button type="cancel2" onclick="deleteStudent()" id="btnYes" class="btnYes">Oui</button>
-                    </div>
-                </div>
-            </div>
-            <!-- End Modal -->
 
         </main>
     </div>
@@ -154,7 +173,10 @@
 
 <th:block th:insert="~{fragments/fragment :: js}"></th:block>
 
+
 </body>
+
 </html>
+
 
 

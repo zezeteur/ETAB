@@ -26,7 +26,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -268,8 +268,6 @@
 
 
 
-
-
   /**
    * Autoresize echart charts
    */
@@ -284,21 +282,11 @@
     }, 200);
   }
 
-
-
 })();
 
 
-  // Script for Modal
 
 
 
-    var deleteId = null;
-
-    function openModalDelete(id) {
-        console.log("ID reçu pour suppression:", id); // Affiche l'ID dans la console pour débogage
-        deleteId = id;
-        document.getElementById("btnOpen").style.display = "flex";
-    }
 
 

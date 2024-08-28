@@ -63,7 +63,7 @@ public class StudentsController {
     }
 
     @GetMapping("/delete/{id}")
-    public ResponseEntity<String> deleteStudent(@PathVariable(name = "id") Long id) {
+    public ResponseEntity<String> deleteStudent(@PathVariable Long id) {
         try {
             studentService.delete(id); // Appelle la méthode de suppression dans le service
             return new ResponseEntity<>("Student deleted successfully", HttpStatus.OK);
