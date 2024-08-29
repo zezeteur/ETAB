@@ -13,6 +13,8 @@
     function closeModal() {
         const closeModal = document.getElementById("closeModal");
         closeModal.style.display = "none";
+
+
     }
 
     function deleteStudent() {

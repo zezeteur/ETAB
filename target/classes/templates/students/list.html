@@ -34,6 +34,10 @@
 
 </header>
 
+<div id="custom-notification" class="hidden">
+    <p id="notification-message"></p>
+    <span class="close-btn" onclick="closeNotification()">×</span>
+</div>
 
 <aside id="sidebar" class="sidebar">
 
@@ -119,7 +123,7 @@
             <button  class="boutonajout"><span><a th:href="@{/students/add}"> + Nouvel élève</a></span></button>
 
             <table>
-                <thead>
+                <thead class="table-dark">
                 <tr>
                     <th>Nom</th>
                     <th>Prénoms</th>
@@ -173,6 +177,8 @@
                             </div>
                         </div>
                     </div>
+
+
 
                 </tr>
                 </tbody>
