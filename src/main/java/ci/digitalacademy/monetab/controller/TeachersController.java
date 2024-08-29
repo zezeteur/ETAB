@@ -2,6 +2,7 @@ package ci.digitalacademy.monetab.controller;
 
 import ci.digitalacademy.monetab.models.Teacher;
 import ci.digitalacademy.monetab.services.TeacherService;
+import ci.digitalacademy.monetab.services.dto.TeacherDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -27,16 +28,16 @@ public class TeachersController {
     @GetMapping
     public String showTeachersList(Model model){
         log.debug("Request to show teachers list");
-        List<Teacher> teachers = teacherService.findAll();
+        List<TeacherDTO> teachers = teacherService.findAll();
         model.addAttribute("teachers" , teachers);
 
         return "teachers/list";
     }
 
     @PostMapping
-    public String saveTeacher(Teacher teacher){
-        log.debug("Request to save teacher :{}", teacher);
-        teacherService.save(teacher);
+    public String saveTeacher(TeacherDTO teacherDTO){
+        log.debug("Request to save teacher :{}", teacherDTO);
+        teacherService.save(teacherDTO);
 
         return "redirect:/teachers";
     }
@@ -44,10 +45,10 @@ public class TeachersController {
     @GetMapping("/{id}")
     public String showUpdateTeacherForms(Model model, @PathVariable Long id){
         log.debug("Request to show update teacher forms");
-        Optional<Teacher> teacher = teacherService.findOne(id);
+        Optional<TeacherDTO> teacherDTO = teacherService.findOne(id);
 
-        if (teacher.isPresent()){
-            model.addAttribute("teacher" , teacher.get());
+        if (teacherDTO.isPresent()){
+            model.addAttribute("teacher" , teacherDTO.get());
             return "teachers/forms";
         } else {
             return "redirect:/teachers";
@@ -57,7 +58,7 @@ public class TeachersController {
     @GetMapping("/add")
     public String showAddTeacherForms(Model model){
         log.debug("Request to show add teacher forms");
-        model.addAttribute("teacher", new Teacher());
+        model.addAttribute("teacher", new TeacherDTO());
         return "teachers/forms";
     }
 

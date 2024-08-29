@@ -22,11 +22,7 @@ function showCustomNotification(message) {
 
         // Ajout d'un écouteur d'événement sur le bouton
         document.getElementById('btnYes').addEventListener('click', () => {
-           setTimeout(showCustomNotification, 5000);
 
             showCustomNotification('Suppression éffectée !');
-
-
-
 
         });

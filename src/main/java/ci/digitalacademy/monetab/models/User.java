@@ -27,6 +27,5 @@ public class User {
     @Column(name = "dateCreation")
     private Instant dateCreation = Instant.now();
 
-    @OneToOne
-    private Adress adress;
+
 }

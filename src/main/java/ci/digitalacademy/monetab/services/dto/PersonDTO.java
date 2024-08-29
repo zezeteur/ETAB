@@ -1,4 +1,24 @@
 package ci.digitalacademy.monetab.services.dto;
 
-public class PersonDTO {
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public abstract class PersonDTO {
+
+    private Long id;
+
+    private String nom;
+
+    private String prenom;
+
+    private String genre;
+
+    private String dateNaissance;
+
+    private String email;
+
+    private String telephone;
+
 }

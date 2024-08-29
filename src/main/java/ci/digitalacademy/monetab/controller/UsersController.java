@@ -2,6 +2,7 @@ package ci.digitalacademy.monetab.controller;
 
 import ci.digitalacademy.monetab.models.User;
 import ci.digitalacademy.monetab.services.UserService;
+import ci.digitalacademy.monetab.services.dto.UserDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -25,16 +26,16 @@ public class UsersController {
     @GetMapping
     public String showUsersList(Model model){
         log.debug("Request to show users list");
-        List<User> users = userService.findAll();
+        List<UserDTO> users = userService.findAll();
         model.addAttribute("users" , users);
 
         return "users/list";
     }
 
     @PostMapping
-    public String saveUser(User user){
-        log.debug("Request to save user :{}", user);
-        userService.save(user);
+    public String saveUser(UserDTO userDTO){
+        log.debug("Request to save user :{}", userDTO);
+        userService.save(userDTO);
 
         return "redirect:/users";
     }
@@ -42,10 +43,10 @@ public class UsersController {
     @GetMapping("/{id}")
     public String showUpdateUserForms(Model model, @PathVariable Long id){
         log.debug("Request to show update user forms");
-        Optional<User> user = userService.findOne(id);
+        Optional<UserDTO> userDTO = userService.findOne(id);
 
-        if (user.isPresent()){
-            model.addAttribute("user" , user.get());
+        if (userDTO.isPresent()){
+            model.addAttribute("user" , userDTO.get());
             return "users/forms";
         } else {
             return "redirect:/users";
@@ -55,7 +56,7 @@ public class UsersController {
     @GetMapping("/add")
     public String showAddUserForms(Model model){
         log.debug("Request to show add user forms");
-        model.addAttribute("user", new User());
+        model.addAttribute("user", new UserDTO());
         return "users/forms";
     }
 }

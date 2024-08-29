@@ -19,4 +19,7 @@ public class Student extends Person {
 
     @Column(name = "classe", nullable = false)
     private String classe;
+
+    @Transient
+    private Person person;
 }

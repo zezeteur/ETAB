@@ -18,4 +18,5 @@ public class Teacher extends Person {
 
     @Column(name = "vacant", nullable = false)
     private String vacant;
+
 }

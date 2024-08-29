@@ -6,6 +6,9 @@ import ci.digitalacademy.monetab.models.User;
 import ci.digitalacademy.monetab.services.StudentService;
 import ci.digitalacademy.monetab.services.TeacherService;
 import ci.digitalacademy.monetab.services.UserService;
+import ci.digitalacademy.monetab.services.dto.StudentDTO;
+import ci.digitalacademy.monetab.services.dto.TeacherDTO;
+import ci.digitalacademy.monetab.services.dto.UserDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,13 +29,13 @@ public class HomeController {
     @GetMapping
     public String home(Model model){
 
-        List<Student> students = studentService.findAll();
+        List<StudentDTO> students = studentService.findAll();
         model.addAttribute("students" , students);
 
-        List<Teacher> teachers = teacherService.findAll();
+        List<TeacherDTO> teachers = teacherService.findAll();
         model.addAttribute("teachers" , teachers);
 
-        List<User> users = userService.findAll();
+        List<UserDTO> users = userService.findAll();
         model.addAttribute("users" , users);
 
         return "home/index";

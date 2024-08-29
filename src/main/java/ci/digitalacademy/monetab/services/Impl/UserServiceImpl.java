@@ -1,8 +1,11 @@
 package ci.digitalacademy.monetab.services.Impl;
 
 import ci.digitalacademy.monetab.models.User;
+import ci.digitalacademy.monetab.models.User;
 import ci.digitalacademy.monetab.repositories.UserRepository;
 import ci.digitalacademy.monetab.services.UserService;
+import ci.digitalacademy.monetab.services.dto.UserDTO;
+import ci.digitalacademy.monetab.services.mapper.UserMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -17,31 +20,44 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 
     @Override
-    public User save(User user) {
-        log.debug("Request to save User{}", user);
+    public UserDTO save(UserDTO userDTO) {
+        log.debug("Request to save User{}", userDTO);
+        User user = UserMapper.toEntity(userDTO);
+        user = userRepository.save(user);
 
-        return userRepository.save(user);
+        return UserMapper.toDto(user);
     }
 
     @Override
-    public User update(User user) {
-        log.debug("Request to update User{}", user);
+    public UserDTO update(UserDTO userDTO) {
 
-        return null;
+        log.debug("Request to update User{}", userDTO);
+
+        return findOne(userDTO.getId()).map(existingUser -> {
+            existingUser.setPseudo(userDTO.getPseudo());
+            existingUser.setPassword(userDTO.getPassword());
+            existingUser.setDateCreation(userDTO.getDateCreation());
+
+            return save(existingUser);
+        }).orElseThrow(() -> new IllegalArgumentException());
     }
 
     @Override
-    public Optional<User> findOne(Long id) {
+    public Optional<UserDTO> findOne(Long id) {
         log.debug("Request to findOne User{}", id);
 
-        return userRepository.findById(id);
+        return userRepository.findById(id).map(user -> {
+            return UserMapper.toDto(user);
+        });
     }
 
     @Override
-    public List<User> findAll() {
-        log.debug("Request to findAll users");
+    public List<UserDTO> findAll() {
+        log.debug("Request to findAll Useres");
 
-        return userRepository.findAll();
+        return userRepository.findAll().stream().map(user -> {
+            return UserMapper.toDto(user);
+        }).toList();
     }
 
     @Override

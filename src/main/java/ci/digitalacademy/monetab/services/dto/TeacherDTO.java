@@ -1,4 +1,14 @@
 package ci.digitalacademy.monetab.services.dto;
 
-public class TeacherDTO {
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class TeacherDTO extends PersonDTO {
+
+    private String matiere;
+
+    private String vacant;
+
 }

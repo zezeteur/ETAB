@@ -4,6 +4,7 @@ import ci.digitalacademy.monetab.models.Student;
 import ci.digitalacademy.monetab.models.Teacher;
 import ci.digitalacademy.monetab.models.User;
 import ci.digitalacademy.monetab.services.StudentService;
+import ci.digitalacademy.monetab.services.dto.StudentDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -28,16 +29,16 @@ public class StudentsController {
     @GetMapping
     public String showStudentsList(Model model){
         log.debug("Request to show students list");
-        List<Student> students = studentService.findAll();
+        List<StudentDTO> students = studentService.findAll();
         model.addAttribute("students" , students);
 
         return "students/list";
     }
 
     @PostMapping
-    public String saveStudent(Student student){
-        log.debug("Request to save student :{}", student);
-        studentService.save(student);
+    public String saveStudent(StudentDTO studentDTO){
+        log.debug("Request to save student :{}", studentDTO);
+        studentService.save(studentDTO);
 
         return "redirect:/students";
     }
@@ -45,7 +46,7 @@ public class StudentsController {
     @GetMapping("/{id}")
     public String showUpdateStudentForms(Model model, @PathVariable Long id){
         log.debug("Request to show update student forms");
-        Optional<Student> student = studentService.findOne(id);
+        Optional<StudentDTO> student = studentService.findOne(id);
 
         if (student.isPresent()){
             model.addAttribute("student" , student.get());
@@ -58,7 +59,7 @@ public class StudentsController {
     @GetMapping("/add")
     public String showAddStudentForms(Model model){
         log.debug("Request to show add student forms");
-        model.addAttribute("student", new Student());
+        model.addAttribute("student", new StudentDTO());
         return "students/forms";
     }
 

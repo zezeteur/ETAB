@@ -5,39 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4817b8e-ae49-46e3-8970-6447becf1a05" name="Changes" comment="Mise a jour v1.0.9&#10;-mise a jour de l'architecture&#10;-Ajout fonctionnalite de suppression&#10;-Correction de bugs&#10;-Ajout mode sombre&#10;Mon Etab v1.0.9">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/dto/PersonDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/dto/StudentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/dto/TeacherDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/mapper/PersonMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/mapper/StudentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/mapper/TeacherMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/notif.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MonEtab.log" beforeDir="false" afterPath="$PROJECT_DIR$/MonEtab.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/trashanim.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/fragmentforms.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/fragmentforms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/reports/generate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/reports/generate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/students/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/students/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/teachers/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers/forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/teachers/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/teachers/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/trashanim.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/reports/generate.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/reports/generate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/students/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/students/forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/students/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/students/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/teachers/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/teachers/forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/teachers/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/teachers/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/users/forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/users/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/StudentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/StudentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/TeachersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/TeachersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/AdressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/AdressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/TeacherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/TeacherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/dto/PersonDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/dto/PersonDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/dto/StudentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/dto/TeacherDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/dto/TeacherDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/mapper/PersonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/mapper/TeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ci/digitalacademy/monetab/services/mapper/TeacherMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/StudentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/StudentsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/TeachersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/TeachersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/controller/UsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/AdressService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/AdressService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/Impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/Impl/StudentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/Impl/TeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/Impl/TeacherServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/Impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/Impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/TeacherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/TeacherService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ci/digitalacademy/monetab/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/notif.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/notif.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +53,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>

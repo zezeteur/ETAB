@@ -7,9 +7,9 @@ import java.util.Optional;
 
 public interface AdressService {
 
-    AdressDTO save(AdressDTO adress);
+    AdressDTO save(AdressDTO user);
 
-    AdressDTO update(AdressDTO adress);
+    AdressDTO update(AdressDTO user);
 
     Optional<AdressDTO> findOne(Long id);
 
